@@ -1,0 +1,50 @@
+.footer {
+    background: $blue;
+    margin-top: 60px;
+    padding: 20px 0;
+
+    ul.menu-items {
+        list-style: none;
+
+        li {
+            margin: 10px 0;
+
+            a {
+                position: relative;
+                width: auto;
+                color: $white;
+                font-size: $size-16;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.locations {
+    padding-top: 10px;
+
+    .location {
+        color: $white;
+        font-size: $size-16;
+        margin-bottom: 30px;
+
+        span {
+            display: block;
+        }
+
+        span:last-child {
+            margin-top: 5px;
+        }
+
+        span.glyphicon {
+            font-size: $size-26;
+            float: left;
+            margin-right: 10px;
+            margin-top: 12px;
+        }
+    }
+
+    .location:last-child {
+        margin-bottom: 0;
+    }
+}

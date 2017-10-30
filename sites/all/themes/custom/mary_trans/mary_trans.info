@@ -1,0 +1,28 @@
+name = Mary Trans bootstrap theme.
+description = Mary Trans bootstrap theme.
+core = 7.x
+base theme = bootstrap
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;          Regions          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]         = 'Header'
+regions[navigation]     = 'Navigation'
+regions[content]        = 'Content'
+regions[footer]         = 'Footer'
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;          Stylesheets          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/main.css
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;          Scripts          ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/jquery.js
+scripts[] = js/bootstrap.js
+scripts[] = js/script.js

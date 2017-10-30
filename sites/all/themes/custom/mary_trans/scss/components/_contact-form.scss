@@ -1,0 +1,49 @@
+.contact-form {
+    margin: 25px 0;
+    text-align: center;
+
+    p.title {
+        font-size: $size-34;
+        font-weight: bold;
+        color: $black;
+    }
+
+    .contact-form-wrapper {
+        margin-top: 25px;
+        background: $yellow;
+        padding: 20px;
+        border-radius: 8px;
+
+        p.field-label,
+        label {
+            font-size: $size-20;
+            font-weight: bold;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        textarea,
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            font-size: $size-20;
+            padding: 7px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            height: 170px;
+            resize: none;
+        }
+
+        input[type=submit],
+        button[type=submit] {
+            background: $black-background;
+            color: $white;
+        }
+    }
+}

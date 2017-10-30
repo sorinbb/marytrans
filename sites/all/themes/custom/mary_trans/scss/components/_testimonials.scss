@@ -1,0 +1,32 @@
+.testimonials {
+    .carousel {
+        ol.carousel-indicators {
+            bottom: -30px;
+
+            li {
+                background: $gray;
+            }
+
+            li.active {
+                background: $yellow;
+            }
+        }
+
+        .carousel-inner {
+            .item {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 120px;
+                    margin: 10px auto 0 auto;
+                }
+
+                p {
+                    font-size: $size-16;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

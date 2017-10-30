@@ -1,0 +1,138 @@
+.cars-radio-buttons {
+    label {
+        font-size: $size-16;
+        margin: 10px 0;
+    }
+
+    label:first-child {
+        margin-top: 0;
+    }
+
+    label:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.fast-calculator {
+    background: $black-background;
+    padding-bottom: 30px;
+
+    .deliver-your-car {
+
+        .deliver-your-car-text {
+            font-size: $size-26;
+            color: $yellow;
+            padding: 20px 0 10px 0;
+        }
+
+        .calculate-price {
+            background: $white;
+            padding: 15px 15px 0 15px;
+
+            .calculate-price-title {
+                font-size: $size-16;
+                color: $black;
+            }
+
+            .internal-options {
+                .select-wrapper {
+                    width: 100%;
+                    overflow: hidden;
+                    border: 1px solid $light-gray-border;
+                    margin-bottom: 19px;
+                    padding: 13px 7px;
+                    background: $light-gray-background;
+
+                    select {
+                        width: 107%;
+                        background: none;
+                        outline: none;
+                        border: none;
+                        font-size: $size-16;
+                    }
+                }
+
+                .select-wrapper:hover,
+                .select-wrapper select:hover {
+                    cursor: pointer;
+                }
+
+                .select-wrapper:after {
+                    content: "\e259";
+                    font-family: $glyphicons-font;
+                    line-height: 1;
+                    float: right;
+                    margin-top: -20px;
+                }
+            }
+
+            .cars-per-container {
+                .select-cars-per-container {
+                    @extend .cars-radio-buttons;
+                }
+
+                .total-rates {
+                    .rate {
+                        margin: 20px 0;
+                        display: block;
+                    }
+
+                    .rate-label {
+                        width: 150px;
+                        background: $black-background;
+                        padding: 12px;
+                        color: $white;
+                        font-size: $size-16;
+                    }
+
+                    .right-triangle {
+                        width: 0;
+                        height: 0;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                        border-left: 15px solid $black-background;
+                        margin-top: 7px;
+                    }
+
+                    .rate-price {
+                        font-size: $size-16;
+                        margin: 12px 0 0 25px;
+                    }
+
+                    .rate.total-rate {
+                        .rate-label {
+                            background: $yellow;
+                        }
+
+                        .right-triangle {
+                            border-left-color: $yellow;
+                        }
+
+                        .rate-price {
+                            color: $yellow;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .load-type {
+                .select-load-type {
+                    @extend .cars-radio-buttons;
+                }
+            }
+        }
+
+        .calculation-note {
+            color: $gray;
+            padding-top: 20px;
+            font-size: $size-12;
+        }
+    }
+}

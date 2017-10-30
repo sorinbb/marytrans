@@ -1,0 +1,177 @@
+<?php
+require_once 'marytrans_core.api.inc';
+require_once 'marytrans_core.forms.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function marytrans_core_menu() {
+    $items = [];
+    $items['home'] = [
+        'title'           => 'Home',
+        'type'            => MENU_NORMAL_ITEM,
+        'page callback'   => 'marytrans_core_home',
+        'access callback' => TRUE
+    ];
+    $items['about'] = [
+        'title'           => 'About us',
+        'type'            => MENU_NORMAL_ITEM,
+        'page callback'   => 'marytrans_core_about',
+        'access callback' => TRUE
+    ];
+    $items['faq'] = [
+        'title'           => 'FAQ',
+        'type'            => MENU_NORMAL_ITEM,
+        'page callback'   => 'marytrans_core_faq',
+        'access callback' => TRUE
+    ];
+
+    return $items;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function marytrans_core_block_info() {
+    $blocks = [];
+    $blocks['marytrans_fast_calculator'] = [
+        'info' => t('MaryTrans fast calculator'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_order_steps'] = [
+        'info' => t('MaryTrans order steps'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_check_our_cars'] = [
+        'info' => t('MaryTrans check our cars'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_testimonials'] = [
+        'info' => t('MaryTrans testimonials'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_short_contacts'] = [
+        'info' => t('MaryTrans short contacts'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_about_us'] = [
+        'info' => t('MaryTrans about us'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_faq'] = [
+        'info' => t('MaryTrans FAQ'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_what_we_offer'] = [
+        'info' => t('MaryTrans what we offer'),
+        'status' => 0,
+    ];
+
+    return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function marytrans_core_block_view($delta = '') {
+    $block = [];
+    $variables = [];
+    $path_to_theme = drupal_get_path('theme', 'mary_trans');
+
+    switch ($delta) {
+        case 'marytrans_fast_calculator':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_fast_calculator', $variables);
+            break;
+        case 'marytrans_order_steps':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_order_steps', $variables);
+            break;
+        case 'marytrans_check_our_cars':
+            $cars = db_select('node', 'n')
+                ->fields('n')
+                ->condition('type', 'car')
+                ->condition('status', '1')
+                ->execute()
+                ->fetchAllAssoc('nid');
+            $cars = node_load_multiple(array_keys($cars));
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'cars' => $cars
+            ];
+            $block['content'] = theme('marytrans_check_our_cars', $variables);
+            break;
+        case 'marytrans_testimonials':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_testimonials', $variables);
+            break;
+        case 'marytrans_short_contacts':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_short_contacts', $variables);
+            break;
+        case 'marytrans_about_us':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_about_us', $variables);
+            break;
+        case 'marytrans_faq':
+            $questions = db_select('node', 'n')
+                ->fields('n')
+                ->condition('type', 'faq')
+                ->condition('status', '1')
+                ->execute()
+                ->fetchAllAssoc('nid');
+            $questions = node_load_multiple(array_keys($questions));
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'questions' => $questions
+            ];
+            $block['content'] = theme('marytrans_faq', $variables);
+            break;
+        case 'marytrans_what_we_offer':
+            $variables['path_to_theme'] = $path_to_theme;
+            $block['content'] = theme('marytrans_what_we_offer', $variables);
+            break;
+    }
+
+    return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function marytrans_core_theme() {
+    return [
+        'marytrans_fast_calculator' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_fast_calculator',
+        ],
+        'marytrans_order_steps' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_order_steps',
+        ],
+        'marytrans_check_our_cars' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_check_our_cars',
+        ],
+        'marytrans_testimonials' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_testimonials',
+        ],
+        'marytrans_short_contacts' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_short_contacts',
+        ],
+        'marytrans_about_us' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_about_us',
+        ],
+        'marytrans_faq' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_faq',
+        ],
+        'marytrans_what_we_offer' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_what_we_offer',
+        ],
+    ];
+}

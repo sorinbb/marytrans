@@ -1,0 +1,22 @@
+.paginator {
+    text-align: center;
+
+    a {
+        font-family: "Montserrat Bold";
+        font-size: $size-16;
+        color: $black;
+        background: $light-gray-background;
+        text-decoration: none;
+        padding: 13px 16px;
+        margin-right: 7px;
+    }
+
+    a.active {
+        background: $yellow;
+        color: $white;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+}

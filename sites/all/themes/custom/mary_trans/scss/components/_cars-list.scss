@@ -1,0 +1,79 @@
+.our-cars-list {
+    padding-top: 35px;
+
+    .car-item {
+        background: $light-gray-background;
+        margin-bottom: 35px;
+
+        .car-image {
+            img {
+                width: 350px;
+                height: 300px;
+                margin-right: 20px;
+            }
+        }
+
+        .car-info {
+            height: 300px;
+            max-height: 300px;
+            padding-top: 20px;
+            padding-right: 20px;
+
+            p.title {
+                font-family: "Montserrat Bold";
+                font-size: $size-26;
+            }
+
+            p.price {
+                font-size: $size-20;
+                font-family: "Montserrat Bold";
+                color: $yellow;
+            }
+
+            p.description {
+                font-size: $size-16;
+                font-family: "Montserrat Regular";
+            }
+
+            p.specifications {
+                font-size: $size-16;
+                font-family: "Montserrat Bold";
+
+                img {
+                    margin-right: 5px;
+                    margin-left: 40px;
+                }
+
+                img:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            a.show-car-details {
+                display: inline-block;
+                margin-top: 15px;
+                margin-right: 15px;
+            }
+
+            a.order {
+                display: inline-block;
+                margin-top: 15px;
+                background: $yellow;
+                color: $white;
+            }
+        }
+
+        .cars-images-slider {
+            padding: 20px 0;
+
+            .carousel {
+                width: calc(100% - 60px);
+
+                .carousel-control.left,
+                .carousel-control.right {
+                    background: none;
+                }
+            }
+        }
+    }
+}

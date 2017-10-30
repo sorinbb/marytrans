@@ -1,0 +1,36 @@
+.accordion {
+    text-align: left;
+
+    .panel {
+        background: $light-gray-background;
+        border: none;
+        margin-bottom: 20px;
+
+        .panel-heading {
+            background: $light-gray-background;
+            padding: 0;
+
+            a {
+                display: block;
+                font-size: $size-20;
+                font-weight: bold;
+                color: $black;
+                text-decoration: none;
+                padding: 10px 15px;
+
+                span {
+                    float: right;
+                }
+            }
+        }
+
+        .panel-body {
+            border: none !important;
+            font-size: $size-16;
+        }
+    }
+
+    .panel:last-child {
+        margin-bottom: 0;
+    }
+}

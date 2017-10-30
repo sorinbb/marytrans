@@ -1,0 +1,32 @@
+.my-cars {
+    font-family: "Montserrat Regular";
+    margin: 25px 0;
+
+    p.title {
+        font-size: $size-34;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    a.make-order {
+        float: right;
+        font-size: $size-16;
+    }
+
+    .table {
+        tr {
+            background: none;
+            border: none;
+            outline: none;
+
+            a {
+                color: $black;
+            }
+        }
+
+        tr.table-header {
+            background: $light-gray-background;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.main-navigation {
+    background: $green;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    color: $white;
+    height: $navbar-height;
+    max-height: $navbar-height;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .container {
+        .navbar-header {
+            a.navbar-brand {
+                padding: 0;
+                margin-right: 15px;
+
+                img {
+                    height: $logo-height;
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .collapse.navbar-collapse {
+            text-align: center;
+
+            ul.nav.navbar-nav {
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+
+                li {
+                    a {
+                        color: $white;
+                        background: none;
+                        font-size: $size-16;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        outline: none;
+                    }
+                }
+
+                li.active,
+                li:hover {
+                    background: none;
+                }
+            }
+
+            ul.nav.navbar-nav.navbar-right {
+                li {
+                    a {
+                        height: $navbar-height;
+                        background: $white;
+                        color: $black;
+                        padding-top: 0;
+
+                        .call-us-icon {
+                            font-size: $size-26;
+                            color: $gray;
+                            margin: 9px 10px 0 0;
+                        }
+
+                        .call-us-phone {
+                            font-weight: bold;
+                            font-size: $size-20;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "base/fonts";
+@import "base/variables";
+@import "base/helpers";
+
+body {
+    font-family: $default-font;
+}
+
+@import "components/header";
+@import "components/navbar";
+@import "components/fast-calculator";
+@import "components/order-steps";
+@import "components/carousel";
+@import "components/testimonials";
+@import "components/footer";
+@import "components/cars-list";
+@import "components/paginator";
+@import "components/contact-form";
+@import "components/short-contacts";
+@import "components/accordion";
+@import "components/what-we-offer";
+@import "components/about-us";
+@import "components/login";
+@import "components/my-cars";
