@@ -6,4 +6,3 @@ sites/*/files
 sites/*/private
 .idea
 .sass-cache
-sites/all/themes/custom/mary_trans/css

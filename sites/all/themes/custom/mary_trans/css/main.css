@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/Myriad-Pro-Regular.ttf"); }
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf"); }
+.float-left {
+  float: left; }
+
+.yellow-button {
+  font-size: 20px;
+  padding: 10px 30px;
+  background: #f9c32b;
+  color: #fff;
+  text-decoration: none; }
+
+.yellow-button:hover,
+.yellow-button:visited,
+.yellow-button:focus,
+.yellow-button:active {
+  color: #fff;
+  text-decoration: none; }
+
+.underlined-title {
+  font-size: 34px;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #777;
+  text-align: center;
+  font-weight: bold; }
+
+.display-none {
+  display: none; }
+
+.rounded-button {
+  font-family: "Montserrat Bold";
+  font-size: 16px;
+  color: #000;
+  background: #dfe2e7;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none; }
+
+.rounded-button:hover {
+  color: #000;
+  text-decoration: none; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
+body {
+  font-family: "Myriad Pro"; }
+
+.main-header {
+  height: 280px;
+  background: url("../images/header.png") no-repeat center center;
+  background-size: cover; }
+
+.main-navigation {
+  background: #106443;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  color: #fff;
+  height: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  margin-bottom: 0; }
+  .main-navigation .container .navbar-header a.navbar-brand {
+    padding: 0;
+    margin-right: 15px; }
+    .main-navigation .container .navbar-header a.navbar-brand img {
+      height: 35px;
+      margin-top: 8px; }
+  .main-navigation .container .collapse.navbar-collapse {
+    text-align: center; }
+    .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top; }
+      .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav li a {
+        color: #fff;
+        background: none;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        outline: none; }
+      .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav li.active,
+      .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav li:hover {
+        background: none; }
+    .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right li a {
+      height: 50px;
+      background: #fff;
+      color: #000;
+      padding-top: 0; }
+      .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right li a .call-us-icon {
+        font-size: 26px;
+        color: #777;
+        margin: 9px 10px 0 0; }
+      .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right li a .call-us-phone {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 15px; }
+
+.cars-radio-buttons label, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container label, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type label {
+  font-size: 16px;
+  margin: 10px 0; }
+.cars-radio-buttons label:first-child, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container label:first-child, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type label:first-child {
+  margin-top: 0; }
+.cars-radio-buttons label:last-child, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container label:last-child, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type label:last-child {
+  margin-bottom: 0; }
+.cars-radio-buttons img, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container img, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type img {
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.fast-calculator {
+  background: #2e2e2e;
+  padding-bottom: 30px; }
+  .fast-calculator .deliver-your-car .deliver-your-car-text {
+    font-size: 26px;
+    color: #f9c32b;
+    padding: 20px 0 10px 0; }
+  .fast-calculator .deliver-your-car .calculate-price {
+    background: #fff;
+    padding: 15px 15px 0 15px; }
+    .fast-calculator .deliver-your-car .calculate-price .calculate-price-title {
+      font-size: 16px;
+      color: #000; }
+    .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #eaecef;
+      margin-bottom: 19px;
+      padding: 13px 7px;
+      background: #f1f4f9; }
+      .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper select {
+        width: 107%;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 16px; }
+    .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper:hover,
+    .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper select:hover {
+      cursor: pointer; }
+    .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper:after {
+      content: "\e259";
+      font-family: "Glyphicons Halflings";
+      line-height: 1;
+      float: right;
+      margin-top: -20px; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate {
+      margin: 20px 0;
+      display: block; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate-label {
+      width: 150px;
+      background: #2e2e2e;
+      padding: 12px;
+      color: #fff;
+      font-size: 16px; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .right-triangle {
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #2e2e2e;
+      margin-top: 7px; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate-price {
+      font-size: 16px;
+      margin: 12px 0 0 25px; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate.total-rate .rate-label {
+      background: #f9c32b; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate.total-rate .right-triangle {
+      border-left-color: #f9c32b; }
+    .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate.total-rate .rate-price {
+      color: #f9c32b;
+      font-weight: bold; }
+  .fast-calculator .deliver-your-car .calculation-note {
+    color: #777;
+    padding-top: 20px;
+    font-size: 12px; }
+
+.order-steps {
+  padding: 50px 0 20px 0; }
+  .order-steps .order-steps-title-button p {
+    font-size: 34px; }
+  .order-steps .order-steps-title-button a {
+    display: inline-block;
+    margin-top: 15px; }
+  .order-steps .order-step {
+    height: 70px;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+    -webkit-box-shadow: -1px -1px 10px 0px rgba(119, 119, 119, 0.6);
+    -moz-box-shadow: -1px -1px 10px 0px rgba(119, 119, 119, 0.6);
+    box-shadow: -1px -1px 10px 0px rgba(119, 119, 119, 0.6); }
+    .order-steps .order-step img {
+      height: 40px;
+      margin: 10px; }
+    .order-steps .order-step p {
+      font-size: 16px;
+      margin-top: 20px; }
+
+.check-our-cars {
+  margin-bottom: 35px; }
+
+.multi-item-carousel {
+  width: calc(100% - 80px);
+  margin: auto; }
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left; }
+    .multi-item-carousel .carousel-inner > .item a img {
+      width: 100%;
+      height: 260px;
+      border-radius: 8px; }
+    .multi-item-carousel .carousel-inner > .item a p {
+      font-weight: bold; }
+    .multi-item-carousel .carousel-inner > .item a p.car-brand {
+      font-size: 26px;
+      color: #000;
+      margin-top: 10px; }
+    .multi-item-carousel .carousel-inner > .item a p.car-price {
+      font-size: 20px;
+      color: #f9c32b;
+      margin-top: -10px;
+      margin-bottom: 0; }
+    .multi-item-carousel .carousel-inner > .item a:hover {
+      text-decoration: none; }
+  .multi-item-carousel .carousel-inner .active.left {
+    left: -33.33%; }
+  .multi-item-carousel .carousel-inner .active.right {
+    left: 33.33%; }
+  .multi-item-carousel .carousel-inner .next {
+    left: 33.33%; }
+  .multi-item-carousel .carousel-inner .prev {
+    left: -33.33%; }
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+      transition: 500ms ease-in-out all;
+      backface-visibility: visible;
+      transform: none !important; } }
+  .multi-item-carousel .carousel-control.left,
+  .multi-item-carousel .carousel-control.right {
+    width: 30px;
+    background: #f1f4f9;
+    color: #777;
+    opacity: 1;
+    text-shadow: none;
+    font-weight: lighter; }
+  .multi-item-carousel .carousel-control.left {
+    border-radius: 8px 3px 3px 8px;
+    margin-left: -25px; }
+  .multi-item-carousel .carousel-control.right {
+    border-radius: 3px 8px 8px 3px;
+    margin-right: -25px; }
+
+.testimonials .carousel ol.carousel-indicators {
+  bottom: -30px; }
+  .testimonials .carousel ol.carousel-indicators li {
+    background: #777; }
+  .testimonials .carousel ol.carousel-indicators li.active {
+    background: #f9c32b; }
+.testimonials .carousel .carousel-inner .item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  margin: 10px auto 0 auto; }
+.testimonials .carousel .carousel-inner .item p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px; }
+
+.footer {
+  background: #2d3740;
+  margin-top: 60px;
+  padding: 20px 0; }
+  .footer ul.menu-items {
+    list-style: none; }
+    .footer ul.menu-items li {
+      margin: 10px 0; }
+      .footer ul.menu-items li a {
+        position: relative;
+        width: auto;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none; }
+
+.locations {
+  padding-top: 10px; }
+  .locations .location {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px; }
+    .locations .location span {
+      display: block; }
+    .locations .location span:last-child {
+      margin-top: 5px; }
+    .locations .location span.glyphicon {
+      font-size: 26px;
+      float: left;
+      margin-right: 10px;
+      margin-top: 12px; }
+  .locations .location:last-child {
+    margin-bottom: 0; }
+
+.our-cars-list {
+  padding-top: 35px; }
+  .our-cars-list .car-item {
+    background: #f1f4f9;
+    margin-bottom: 35px; }
+    .our-cars-list .car-item .car-image img {
+      width: 350px;
+      height: 300px;
+      margin-right: 20px; }
+    .our-cars-list .car-item .car-info {
+      height: 300px;
+      max-height: 300px;
+      padding-top: 20px;
+      padding-right: 20px; }
+      .our-cars-list .car-item .car-info p.title {
+        font-family: "Montserrat Bold";
+        font-size: 26px; }
+      .our-cars-list .car-item .car-info p.price {
+        font-size: 20px;
+        font-family: "Montserrat Bold";
+        color: #f9c32b; }
+      .our-cars-list .car-item .car-info p.description {
+        font-size: 16px;
+        font-family: "Montserrat Regular"; }
+      .our-cars-list .car-item .car-info p.specifications {
+        font-size: 16px;
+        font-family: "Montserrat Bold"; }
+        .our-cars-list .car-item .car-info p.specifications img {
+          margin-right: 5px;
+          margin-left: 40px; }
+        .our-cars-list .car-item .car-info p.specifications img:first-child {
+          margin-left: 0; }
+      .our-cars-list .car-item .car-info a.show-car-details {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 15px; }
+      .our-cars-list .car-item .car-info a.order {
+        display: inline-block;
+        margin-top: 15px;
+        background: #f9c32b;
+        color: #fff; }
+    .our-cars-list .car-item .cars-images-slider {
+      padding: 20px 0; }
+      .our-cars-list .car-item .cars-images-slider .carousel {
+        width: calc(100% - 60px); }
+        .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.left,
+        .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.right {
+          background: none; }
+
+.paginator {
+  text-align: center; }
+  .paginator a {
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: #000;
+    background: #f1f4f9;
+    text-decoration: none;
+    padding: 13px 16px;
+    margin-right: 7px; }
+  .paginator a.active {
+    background: #f9c32b;
+    color: #fff; }
+  .paginator a:last-child {
+    margin-right: 0; }
+
+.contact-form {
+  margin: 25px 0;
+  text-align: center; }
+  .contact-form p.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #000; }
+  .contact-form .contact-form-wrapper {
+    margin-top: 25px;
+    background: #f9c32b;
+    padding: 20px;
+    border-radius: 8px; }
+    .contact-form .contact-form-wrapper p.field-label,
+    .contact-form .contact-form-wrapper label {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px; }
+    .contact-form .contact-form-wrapper textarea,
+    .contact-form .contact-form-wrapper input[type=text],
+    .contact-form .contact-form-wrapper input[type=email],
+    .contact-form .contact-form-wrapper input[type=password] {
+      width: 100%;
+      font-size: 20px;
+      padding: 7px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      margin-bottom: 20px; }
+    .contact-form .contact-form-wrapper textarea {
+      height: 170px;
+      resize: none; }
+    .contact-form .contact-form-wrapper input[type=submit],
+    .contact-form .contact-form-wrapper button[type=submit] {
+      background: #2e2e2e;
+      color: #fff; }
+
+.short-contacts {
+  background: #f1f4f9;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 30px; }
+  .short-contacts p.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; }
+  .short-contacts .locations {
+    padding-top: 0; }
+    .short-contacts .locations .location {
+      color: #000; }
+
+.accordion {
+  text-align: left; }
+  .accordion .panel {
+    background: #f1f4f9;
+    border: none;
+    margin-bottom: 20px; }
+    .accordion .panel .panel-heading {
+      background: #f1f4f9;
+      padding: 0; }
+      .accordion .panel .panel-heading a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 15px; }
+        .accordion .panel .panel-heading a span {
+          float: right; }
+    .accordion .panel .panel-body {
+      border: none !important;
+      font-size: 16px; }
+  .accordion .panel:last-child {
+    margin-bottom: 0; }
+
+.what-we-offer {
+  position: relative;
+  background: #2d3740;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  z-index: 1; }
+  .what-we-offer .what-we-offer-title {
+    font-size: 26px;
+    color: #fff; }
+  .what-we-offer .offer-item {
+    height: 280px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    -webkit-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.75); }
+    .what-we-offer .offer-item img {
+      width: 100%;
+      height: 150px; }
+    .what-we-offer .offer-item .offer-item-title {
+      font-size: 16px;
+      margin-top: 10px; }
+
+.about-us {
+  margin: 45px 0; }
+  .about-us p {
+    font-size: 16px;
+    color: #000; }
+  .about-us img {
+    width: 100%;
+    height: 600px;
+    margin: 20px 0; }
+  .about-us p.bottom-description {
+    text-align: center; }
+
+.contact-form.login-form .contact-form-wrapper {
+  background: #f1f4f9;
+  padding: 60px 40px 40px 40px; }
+  .contact-form.login-form .contact-form-wrapper input {
+    margin-bottom: 40px;
+    box-sizing: content-box; }
+
+.my-cars {
+  font-family: "Montserrat Regular";
+  margin: 25px 0; }
+  .my-cars p.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 25px; }
+  .my-cars a.make-order {
+    float: right;
+    font-size: 16px; }
+  .my-cars .table tr {
+    background: none;
+    border: none;
+    outline: none; }
+    .my-cars .table tr a {
+      color: #000; }
+  .my-cars .table tr.table-header {
+    background: #f1f4f9; }
+
+/*# sourceMappingURL=main.css.map */
