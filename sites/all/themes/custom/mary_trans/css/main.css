@@ -53,13 +53,32 @@
 .no-margin-bottom {
   margin-bottom: 0 !important; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 body {
   font-family: "Myriad Pro"; }
 
 .main-header {
-  height: 280px;
-  background: url("../images/header.png") no-repeat center center;
+  height: 250px;
+  background: url("../images/header.png") no-repeat center 25px;
   background-size: cover; }
+  .main-header .main-navigation {
+    height: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    background: #2e2e2e; }
+    .main-header .main-navigation ul li a {
+      color: #f9c32b !important;
+      padding-top: 3px !important; }
+    .main-header .main-navigation ul#language-interface {
+      list-style: none;
+      float: left; }
+      .main-header .main-navigation ul#language-interface li {
+        float: left;
+        margin-right: 15px; }
+      .main-header .main-navigation ul#language-interface li:last-child {
+        margin-right: 0; }
 
 .main-navigation {
   background: #106443;
@@ -67,10 +86,8 @@ body {
   outline: none;
   border-radius: 0;
   color: #fff;
-  height: 50px;
-  max-height: 50px;
   overflow: hidden;
-  margin-bottom: 0; }
+  margin-bottom: -45px; }
   .main-navigation .container .navbar-header a.navbar-brand {
     padding: 0;
     margin-right: 15px; }
@@ -107,6 +124,17 @@ body {
         font-size: 20px;
         margin-top: 15px; }
 
+.main-navigation.affix {
+  top: 25px;
+  width: 100%;
+  z-index: 999; }
+
+body.admin-logged-in .main-navigation.affix {
+  top: 55px; }
+
+body.admin-logged-in.toolbar-drawer .main-navigation.affix {
+  top: 89px; }
+
 .cars-radio-buttons label, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container label, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type label {
   font-size: 16px;
   margin: 10px 0; }
@@ -121,6 +149,7 @@ body {
 
 .fast-calculator {
   background: #2e2e2e;
+  padding-top: 45px;
   padding-bottom: 30px; }
   .fast-calculator .deliver-your-car .deliver-your-car-text {
     font-size: 26px;
@@ -148,15 +177,10 @@ body {
     .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper:hover,
     .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper select:hover {
       cursor: pointer; }
-    .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper:after {
-      content: "\e259";
-      font-family: "Glyphicons Halflings";
-      line-height: 1;
-      float: right;
-      margin-top: -20px; }
     .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate {
       margin: 20px 0;
-      display: block; }
+      display: block;
+      min-height: 45px; }
     .fast-calculator .deliver-your-car .calculate-price .cars-per-container .total-rates .rate-label {
       width: 150px;
       background: #2e2e2e;
@@ -308,54 +332,55 @@ body {
   .locations .location:last-child {
     margin-bottom: 0; }
 
-.our-cars-list {
-  padding-top: 35px; }
-  .our-cars-list .car-item {
-    background: #f1f4f9;
-    margin-bottom: 35px; }
-    .our-cars-list .car-item .car-image img {
-      width: 350px;
-      height: 300px;
-      margin-right: 20px; }
-    .our-cars-list .car-item .car-info {
-      height: 300px;
-      max-height: 300px;
-      padding-top: 20px;
-      padding-right: 20px; }
-      .our-cars-list .car-item .car-info p.title {
-        font-family: "Montserrat Bold";
-        font-size: 26px; }
-      .our-cars-list .car-item .car-info p.price {
-        font-size: 20px;
-        font-family: "Montserrat Bold";
-        color: #f9c32b; }
-      .our-cars-list .car-item .car-info p.description {
-        font-size: 16px;
-        font-family: "Montserrat Regular"; }
-      .our-cars-list .car-item .car-info p.specifications {
-        font-size: 16px;
-        font-family: "Montserrat Bold"; }
-        .our-cars-list .car-item .car-info p.specifications img {
-          margin-right: 5px;
-          margin-left: 40px; }
-        .our-cars-list .car-item .car-info p.specifications img:first-child {
-          margin-left: 0; }
-      .our-cars-list .car-item .car-info a.show-car-details {
-        display: inline-block;
-        margin-top: 15px;
-        margin-right: 15px; }
-      .our-cars-list .car-item .car-info a.order {
-        display: inline-block;
-        margin-top: 15px;
-        background: #f9c32b;
-        color: #fff; }
-    .our-cars-list .car-item .cars-images-slider {
-      padding: 20px 0; }
-      .our-cars-list .car-item .cars-images-slider .carousel {
-        width: calc(100% - 60px); }
-        .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.left,
-        .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.right {
-          background: none; }
+.our-cars-list .car-item {
+  background: #f1f4f9;
+  margin-bottom: 35px; }
+  .our-cars-list .car-item .car-image img {
+    width: 350px;
+    height: 300px;
+    margin-right: 20px; }
+  .our-cars-list .car-item .car-info {
+    height: 300px;
+    max-height: 300px;
+    padding-top: 20px;
+    padding-right: 20px; }
+    .our-cars-list .car-item .car-info p.title {
+      font-family: "Montserrat Bold";
+      font-size: 26px; }
+    .our-cars-list .car-item .car-info p.price {
+      font-size: 20px;
+      font-family: "Montserrat Bold";
+      color: #f9c32b; }
+    .our-cars-list .car-item .car-info p.description {
+      font-size: 16px;
+      font-family: "Montserrat Regular"; }
+    .our-cars-list .car-item .car-info p.specifications {
+      font-size: 16px;
+      font-family: "Montserrat Bold"; }
+      .our-cars-list .car-item .car-info p.specifications img {
+        margin-right: 5px;
+        margin-left: 40px; }
+      .our-cars-list .car-item .car-info p.specifications img:first-child {
+        margin-left: 0; }
+    .our-cars-list .car-item .car-info a.show-car-details {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 15px; }
+    .our-cars-list .car-item .car-info a.order {
+      display: inline-block;
+      margin-top: 15px;
+      background: #f9c32b;
+      color: #fff; }
+  .our-cars-list .car-item .cars-images-slider {
+    padding: 20px 0; }
+    .our-cars-list .car-item .cars-images-slider .carousel {
+      width: calc(100% - 60px); }
+      .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.left,
+      .our-cars-list .car-item .cars-images-slider .carousel .carousel-control.right {
+        background: none; }
+
+.our-cars-list:first-child {
+  padding-top: 80px; }
 
 .paginator {
   text-align: center; }
@@ -373,28 +398,29 @@ body {
   .paginator a:last-child {
     margin-right: 0; }
 
-.contact-form {
+div.contact-form {
   margin: 25px 0;
+  padding-top: 45px;
   text-align: center; }
-  .contact-form p.title {
+  div.contact-form p.title {
     font-size: 34px;
     font-weight: bold;
     color: #000; }
-  .contact-form .contact-form-wrapper {
+  div.contact-form .contact-form-wrapper {
     margin-top: 25px;
     background: #f9c32b;
     padding: 20px;
     border-radius: 8px; }
-    .contact-form .contact-form-wrapper p.field-label,
-    .contact-form .contact-form-wrapper label {
+    div.contact-form .contact-form-wrapper p.field-label,
+    div.contact-form .contact-form-wrapper label {
       font-size: 20px;
       font-weight: bold;
       color: #fff;
       margin-bottom: 20px; }
-    .contact-form .contact-form-wrapper textarea,
-    .contact-form .contact-form-wrapper input[type=text],
-    .contact-form .contact-form-wrapper input[type=email],
-    .contact-form .contact-form-wrapper input[type=password] {
+    div.contact-form .contact-form-wrapper textarea,
+    div.contact-form .contact-form-wrapper input[type=text],
+    div.contact-form .contact-form-wrapper input[type=email],
+    div.contact-form .contact-form-wrapper input[type=password] {
       width: 100%;
       font-size: 20px;
       padding: 7px;
@@ -402,13 +428,15 @@ body {
       border: none;
       outline: none;
       margin-bottom: 20px; }
-    .contact-form .contact-form-wrapper textarea {
+    div.contact-form .contact-form-wrapper textarea {
       height: 170px;
       resize: none; }
-    .contact-form .contact-form-wrapper input[type=submit],
-    .contact-form .contact-form-wrapper button[type=submit] {
+    div.contact-form .contact-form-wrapper input[type=submit],
+    div.contact-form .contact-form-wrapper button[type=submit] {
       background: #2e2e2e;
-      color: #fff; }
+      color: #fff;
+      border: none;
+      outline: none; }
 
 .short-contacts {
   background: #f1f4f9;
@@ -458,7 +486,6 @@ body {
     font-size: 26px;
     color: #fff; }
   .what-we-offer .offer-item {
-    height: 280px;
     background: #fff;
     padding: 10px;
     border-radius: 8px;
@@ -467,14 +494,14 @@ body {
     -moz-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.75); }
     .what-we-offer .offer-item img {
-      width: 100%;
-      height: 150px; }
+      width: 100%; }
     .what-we-offer .offer-item .offer-item-title {
       font-size: 16px;
       margin-top: 10px; }
 
 .about-us {
-  margin: 45px 0; }
+  margin: 45px 0;
+  padding-top: 45px; }
   .about-us p {
     font-size: 16px;
     color: #000; }
@@ -494,7 +521,8 @@ body {
 
 .my-cars {
   font-family: "Montserrat Regular";
-  margin: 25px 0; }
+  margin: 25px 0;
+  padding-top: 45px; }
   .my-cars p.title {
     font-size: 34px;
     font-weight: bold;
@@ -511,5 +539,103 @@ body {
       color: #000; }
   .my-cars .table tr.table-header {
     background: #f1f4f9; }
+  .my-cars .orders-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 70px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black; }
+    .my-cars .orders-modal .orders-modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+      height: 90%; }
+    .my-cars .orders-modal .orders-modal-close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold; }
+    .my-cars .orders-modal .orders-modal-close:hover,
+    .my-cars .orders-modal .orders-modal-close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer; }
+    .my-cars .orders-modal .orders-modal-slides {
+      display: none;
+      height: 100%;
+      text-align: center; }
+    .my-cars .orders-modal .orders-modal-prev,
+    .my-cars .orders-modal .orders-modal-next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+      text-decoration: none; }
+    .my-cars .orders-modal .orders-modal-next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+    .my-cars .orders-modal .orders-modal-prev:hover,
+    .my-cars .orders-modal .orders-modal-next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    .my-cars .orders-modal .orders-modal-numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: -50px; }
+    .my-cars .orders-modal img {
+      height: 100%;
+      margin-bottom: -4px; }
+
+.marytrans-modal-popup .modal-dialog .modal-content {
+  background: #f1f4f9;
+  border: none;
+  outline: none; }
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-header h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #000; }
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body textarea,
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body input[type=text],
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body input[type=email],
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body input[type=password] {
+    width: 100%;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px; }
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body textarea {
+    height: 170px;
+    resize: none; }
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body input[type=submit],
+  .marytrans-modal-popup .modal-dialog .modal-content .modal-body button[type=submit] {
+    background: #2e2e2e;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px; }
+    .marytrans-modal-popup .modal-dialog .modal-content .modal-body input[type=submit] span,
+    .marytrans-modal-popup .modal-dialog .modal-content .modal-body button[type=submit] span {
+      display: none; }
 
 /*# sourceMappingURL=main.css.map */

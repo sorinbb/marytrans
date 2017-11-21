@@ -1,6 +1,4 @@
 .our-cars-list {
-    padding-top: 35px;
-
     .car-item {
         background: $light-gray-background;
         margin-bottom: 35px;
@@ -76,4 +74,8 @@
             }
         }
     }
+}
+
+.our-cars-list:first-child {
+    padding-top: 80px;
 }

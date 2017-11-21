@@ -76,15 +76,43 @@
 ?>
 
 <!-- HEADER -->
-<div class="main-header"></div>
+<div class="main-header">
+    <nav class="navbar navbar-default navbar-fixed-top main-navigation">
+        <div class="container">
+
+            <div class="collapse navbar-collapse in" id="navbar-header-navigation">
+                <ul class="nav navbar-nav nav-center">
+                    <?php
+                        $language_switcher = module_invoke('languageinterface', 'block_view', '0');
+                        print $language_switcher['content'];
+                    ?>
+                    <?php if ($logged_in) : ?>
+                        <li class="call-us"><a href="<?php print url('user/logout') ?>"><?php print t('Logout'); ?></a></li>
+
+                        <?php if (!$is_admin) : ?>
+                            <li>|</li>
+                            <li><a href="<?php print url('my-orders') ?>"><?php print t('My orders'); ?></a></li>
+                        <?php endif; ?>
+                    <?php else : ?>
+                        <li><a href="<?php print url('user/register') ?>"><?php print t('Register'); ?></a></li>
+                        <li>|</li>
+                        <li><a href="<?php print url('user/login') ?>"><?php print t('Login'); ?></a></li>
+                    <?php endif; ?>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</div>
 <!-- END HEADER -->
 
 <!-- NAVIGATION -->
-<nav class="navbar navbar-default main-navigation">
+<nav class="navbar navbar-default main-navigation" data-spy="affix" data-offset-top="225">
     <div class="container">
 
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse"
                     data-target="#navbar-main-navigation" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -92,7 +120,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php print $base_path ?>">
-                <img src="<?php print $path_to_theme; ?>/images/logo.png" alt="MaryTrans.com">
+                <img src="<?php print $path_to_theme; ?>/images/logo.png"
+                     alt="MaryTrans.com">
             </a>
         </div>
 
@@ -107,7 +136,8 @@
 <!-- MAIN CONTENT -->
 <?php if ($messages): ?>
     <div class="container">
-        <div id="messages"><div class="section clearfix">
+        <div id="messages">
+            <div class="section clearfix">
                 <?php print $messages; ?>
             </div>
         </div> <!-- /.section, /#messages -->
@@ -123,7 +153,9 @@
         <div class="container">
             <div class="row">
 
-                <?php if (!empty($page['footer'])) print $page['footer']; ?>
+                <?php if (!empty($page['footer'])) {
+                    print $page['footer'];
+                } ?>
 
                 <?php print theme('mary_trans_footer', ['mary_trans_main_menu' => $main_menu]); ?>
 

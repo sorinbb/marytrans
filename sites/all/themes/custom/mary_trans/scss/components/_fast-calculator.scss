@@ -21,6 +21,7 @@
 
 .fast-calculator {
     background: $black-background;
+    padding-top: 45px;
     padding-bottom: 30px;
 
     .deliver-your-car {
@@ -63,13 +64,13 @@
                     cursor: pointer;
                 }
 
-                .select-wrapper:after {
-                    content: "\e259";
-                    font-family: $glyphicons-font;
-                    line-height: 1;
-                    float: right;
-                    margin-top: -20px;
-                }
+                //.select-wrapper:after {
+                //    content: "\e259";
+                //    font-family: $glyphicons-font;
+                //    line-height: 1;
+                //    float: right;
+                //    margin-top: -20px;
+                //}
             }
 
             .cars-per-container {
@@ -81,6 +82,7 @@
                     .rate {
                         margin: 20px 0;
                         display: block;
+                        min-height: 45px;
                     }
 
                     .rate-label {

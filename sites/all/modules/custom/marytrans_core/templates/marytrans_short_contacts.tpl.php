@@ -5,7 +5,7 @@
 
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 short-contacts">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <p class="title">Contacts:</p>
+                <p class="title"><?php print t('Contacts'); ?>:</p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="locations">

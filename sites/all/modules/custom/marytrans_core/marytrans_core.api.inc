@@ -18,22 +18,19 @@ function marytrans_core_home() {
     return $content;
 }
 
-function marytrans_core_about() {
+function marytrans_core_faq() {
     $content = '';
 
-    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_about_us');
-    $content .= render($block['content']);
-
-    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_testimonials');
+    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_faq');
     $content .= render($block['content']);
 
     return $content;
 }
 
-function marytrans_core_faq() {
+function marytrans_core_my_orders() {
     $content = '';
 
-    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_faq');
+    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_my_orders');
     $content .= render($block['content']);
 
     return $content;

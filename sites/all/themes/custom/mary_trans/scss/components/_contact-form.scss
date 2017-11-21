@@ -1,5 +1,6 @@
-.contact-form {
+div.contact-form {
     margin: 25px 0;
+    padding-top: 45px;
     text-align: center;
 
     p.title {
@@ -44,6 +45,8 @@
         button[type=submit] {
             background: $black-background;
             color: $white;
+            border: none;
+            outline: none;
         }
     }
 }

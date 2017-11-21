@@ -6,12 +6,12 @@
 
             <div class="deliver-your-car">
                 <div class="deliver-your-car-text">
-                    <p>Deliver your US auction car to port</p>
+                    <p><?php print t('Deliver your US auction car to port'); ?></p>
                 </div>
                 <div class="calculate-price">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 internal-options">
-                            <p class="calculate-price-title">U.S. Internal</p>
+                            <p class="calculate-price-title"><?php print t('U.S. Internal'); ?></p>
                             <div class="select-wrapper">
                                 <select name="auction">
                                     <option disabled="disabled" selected="selected">Selection auction</option>
@@ -59,84 +59,86 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 cars-per-container">
-                            <p class="calculate-price-title">Price per one car</p>
+                            <p class="calculate-price-title"><?php print t('Price per one car'); ?></p>
                             <div class="select-cars-per-container">
                                 <label for="sedan_per_container">
                                     <input type="radio" name="per_container" id="sedan_per_container" checked="checked">
                                     <img src="<?php print $path_to_theme; ?>/images/sedan.png" alt="sedan">
-                                    x4 (Sedan) per container
+                                    x4 (Sedan) <?php print t('per container'); ?>
                                 </label>
                                 <label for="universal_per_container">
                                     <input type="radio" name="per_container" id="universal_per_container">
                                     <img src="<?php print $path_to_theme; ?>/images/universal.png" alt="universal">
-                                    x3 (SUV) per container
+                                    x3 (SUV) <?php print t('per container'); ?>
                                 </label>
                             </div>
                             <div class="total-rates">
                                 <div class="ground-rate rate">
-                                    <div class="rate-label float-left">Ground rate</div>
+                                    <div class="rate-label float-left"><?php print t('Ground rate'); ?></div>
                                     <div class="right-triangle float-left"></div>
                                     <div class="rate-price float-left">$3,200</div>
                                 </div>
-                                <br><br>
                                 <div class="ocean-rate rate">
-                                    <div class="rate-label float-left">Ocean rate</div>
+                                    <div class="rate-label float-left"><?php print t('Ocean rate'); ?></div>
                                     <div class="right-triangle float-left"></div>
                                     <div class="rate-price float-left">$8,300</div>
                                 </div>
-                                <br><br>
                                 <div class="total-rate rate">
-                                    <div class="rate-label float-left">Total</div>
+                                    <div class="rate-label float-left"><?php print t('Total'); ?></div>
                                     <div class="right-triangle float-left"></div>
                                     <div class="rate-price float-left">$11,500</div>
                                 </div>
+<!--                                <div>-->
+<!--                                    <a href="#make-order"-->
+<!--                                       class="yellow-button make-order">Make-->
+<!--                                        your order</a>-->
+<!--                                </div>-->
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 load-type">
-                            <p class="calculate-price-title">Load Type</p>
+                            <p class="calculate-price-title"><?php print t('Load Type'); ?></p>
                             <div class="select-load-type">
                                 <label for="medium_duty_truck">
                                     <input type="radio" name="load_type" id="medium_duty_truck" checked="checked">
                                     <img src="<?php print $path_to_theme; ?>/images/medium-duty-truck.png" alt="medium duty truck">
-                                    Medium Duty Truck
+                                    <?php print t('Medium Duty Truck'); ?>
                                 </label>
                                 <br>
                                 <label for="van">
                                     <input type="radio" name="load_type" id="van">
                                     <img src="<?php print $path_to_theme; ?>/images/van.png" alt="van">
-                                    VAN
+                                    <?php print t('VAN'); ?>
                                 </label>
                                 <br>
                                 <label for="motorcycle">
                                     <input type="radio" name="load_type" id="motorcycle">
                                     <img src="<?php print $path_to_theme; ?>/images/motorcycle.png" alt="motorcycle">
-                                    Motorcycle
+                                    <?php print t('Motorcycle'); ?>
                                 </label>
                                 <br>
                                 <label for="quadrocycle">
                                     <input type="radio" name="load_type" id="quadrocycle">
                                     <img src="<?php print $path_to_theme; ?>/images/quadrocycle.png" alt="quadrocycle">
-                                    Quadrocycle
+                                    <?php print t('Quadrocycle'); ?>
                                 </label>
                                 <br>
                                 <label for="truck">
                                     <input type="radio" name="load_type" id="truck">
                                     <img src="<?php print $path_to_theme; ?>/images/truck.png" alt="truck">
-                                    Truck
+                                    <?php print t('Truck'); ?>
                                 </label>
                                 <br>
                                 <label for="yacht">
                                     <input type="radio" name="load_type" id="yacht">
                                     <img src="<?php print $path_to_theme; ?>/images/yacht.png" alt="yacht">
-                                    Yacht
+                                    <?php print t('Yacht'); ?>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="calculation-note">
-                    * Bobcat sizes vary but this is the price for the standard Bobcat.
-                    Please enquire for an accurate price if your Bobcat does not have standard dimensions.
+                    * <?php print t('Bobcat sizes vary but this is the price for the standard Bobcat. Please enquire for an accurate price if your Bobcat does not have standard dimensions.'); ?>
                 </div>
             </div>
 

@@ -3,7 +3,7 @@
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
     <ul class="menu-items">
         <?php foreach ($mary_trans_main_menu as $menu_item) : ?>
-            <li><?php print l($menu_item['title'], $menu_item['href']); ?></li>
+            <li><?php print l(t($menu_item['title']), $menu_item['href']); ?></li>
         <?php endforeach; ?>
     </ul>
 </div>

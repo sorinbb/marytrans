@@ -1,0 +1,13 @@
+name = Year field
+description = Module provide year field.
+core = 7.x
+package = Fields
+
+files[] = views/year_field_filters_handler_filter_year.inc
+
+; Information added by Drupal.org packaging script on 2017-08-24
+version = "7.x-1.0"
+core = "7.x"
+project = "year_field"
+datestamp = "1503562458"
+

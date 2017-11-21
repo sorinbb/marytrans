@@ -1,6 +1,7 @@
 .my-cars {
     font-family: "Montserrat Regular";
     margin: 25px 0;
+    padding-top: 45px;
 
     p.title {
         font-size: $size-34;
@@ -27,6 +28,91 @@
 
         tr.table-header {
             background: $light-gray-background;
+        }
+    }
+
+    .orders-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 70px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+
+        .orders-modal-content {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+            height: 90%;
+        }
+
+        .orders-modal-close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .orders-modal-close:hover,
+        .orders-modal-close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .orders-modal-slides {
+            display: none;
+            height: 100%;
+            text-align: center;
+        }
+
+        .orders-modal-prev,
+        .orders-modal-next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            text-decoration: none;
+        }
+
+        .orders-modal-next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .orders-modal-prev:hover,
+        .orders-modal-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .orders-modal-numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: -50px;
+        }
+
+        img {
+            height: 100%;
+            margin-bottom: -4px;
         }
     }
 }

@@ -32,13 +32,14 @@
 
             </div>
 
-<!--            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contact-form-wrapper">-->
-<!--                <p class="field-label">Have a question?</p>-->
-<!--                <form>-->
-<!--                    <textarea name="message"></textarea>-->
-<!--                    <input type="submit" name="submit" value="Ask" class="rounded-button">-->
-<!--                </form>-->
-<!--            </div>-->
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contact-form-wrapper">
+                <p class="field-label"><?php print t('Have a question?'); ?></p>
+
+                <?php if (!empty($form)) : ?>
+                    <?php print render($form); ?>
+                <?php endif; ?>
+
+            </div>
 
         </div>
     </div>

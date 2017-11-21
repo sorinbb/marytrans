@@ -1,5 +1,35 @@
 .main-header {
     height: $header-height;
-    background: url($header-image) no-repeat center center;
+    background: url($header-image) no-repeat center 25px;
     background-size: cover;
+
+    .main-navigation {
+        height: 25px;
+        min-height: 25px;
+        max-height: 25px;
+        background: $black-background;
+
+        ul {
+            li {
+                a {
+                    color: $yellow !important;
+                    padding-top: 3px !important;
+                }
+            }
+        }
+
+        ul#language-interface {
+            list-style: none;
+            float: left;
+
+            li {
+                float: left;
+                margin-right: 15px;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }

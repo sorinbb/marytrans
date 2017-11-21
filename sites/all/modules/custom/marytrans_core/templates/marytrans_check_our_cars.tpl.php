@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
 
-            <p class="underlined-title">Check our cars</p>
+            <p class="underlined-title"><?php print t('Check our cars'); ?></p>
 
             <?php if (!empty($cars)) : ?>
 

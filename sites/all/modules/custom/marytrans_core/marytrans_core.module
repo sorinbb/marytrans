@@ -8,22 +8,22 @@ require_once 'marytrans_core.forms.inc';
 function marytrans_core_menu() {
     $items = [];
     $items['home'] = [
-        'title'           => 'Home',
-        'type'            => MENU_NORMAL_ITEM,
-        'page callback'   => 'marytrans_core_home',
-        'access callback' => TRUE
-    ];
-    $items['about'] = [
-        'title'           => 'About us',
-        'type'            => MENU_NORMAL_ITEM,
-        'page callback'   => 'marytrans_core_about',
-        'access callback' => TRUE
+        'title' => 'Home',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'marytrans_core_home',
+        'access callback' => TRUE,
     ];
     $items['faq'] = [
-        'title'           => 'FAQ',
-        'type'            => MENU_NORMAL_ITEM,
-        'page callback'   => 'marytrans_core_faq',
-        'access callback' => TRUE
+        'title' => 'FAQ',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'marytrans_core_faq',
+        'access callback' => TRUE,
+    ];
+    $items['my-orders'] = [
+        'title' => 'My orders',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'marytrans_core_my_orders',
+        'access callback' => 'user_is_logged_in',
     ];
 
     return $items;
@@ -54,16 +54,20 @@ function marytrans_core_block_info() {
         'info' => t('MaryTrans short contacts'),
         'status' => 0,
     ];
-    $blocks['marytrans_about_us'] = [
-        'info' => t('MaryTrans about us'),
-        'status' => 0,
-    ];
     $blocks['marytrans_faq'] = [
         'info' => t('MaryTrans FAQ'),
         'status' => 0,
     ];
     $blocks['marytrans_what_we_offer'] = [
         'info' => t('MaryTrans what we offer'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_my_orders'] = [
+        'info' => t('MaryTrans my orders'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_order_car'] = [
+        'info' => t('MaryTrans order car'),
         'status' => 0,
     ];
 
@@ -74,9 +78,11 @@ function marytrans_core_block_info() {
  * Implements hook_block_view().
  */
 function marytrans_core_block_view($delta = '') {
+    global $language;
+
     $block = [];
     $variables = [];
-    $path_to_theme = drupal_get_path('theme', 'mary_trans');
+    $path_to_theme = base_path() . drupal_get_path('theme', 'mary_trans');
 
     switch ($delta) {
         case 'marytrans_fast_calculator':
@@ -97,39 +103,91 @@ function marytrans_core_block_view($delta = '') {
             $cars = node_load_multiple(array_keys($cars));
             $variables = [
                 'path_to_theme' => $path_to_theme,
-                'cars' => $cars
+                'cars' => $cars,
             ];
             $block['content'] = theme('marytrans_check_our_cars', $variables);
             break;
         case 'marytrans_testimonials':
-            $variables['path_to_theme'] = $path_to_theme;
+            $testimonials = db_select('node', 'n')
+                ->fields('n')
+                ->condition('type', 'testimonials')
+                ->condition('status', '1')
+                ->condition('language', [
+                    $language->language,
+                    LANGUAGE_NONE,
+                ], 'IN')
+                ->execute()
+                ->fetchAllAssoc('nid');
+            $testimonials = node_load_multiple(array_keys($testimonials));
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'testimonials' => $testimonials,
+            ];
             $block['content'] = theme('marytrans_testimonials', $variables);
             break;
         case 'marytrans_short_contacts':
             $variables['path_to_theme'] = $path_to_theme;
             $block['content'] = theme('marytrans_short_contacts', $variables);
             break;
-        case 'marytrans_about_us':
-            $variables['path_to_theme'] = $path_to_theme;
-            $block['content'] = theme('marytrans_about_us', $variables);
-            break;
         case 'marytrans_faq':
             $questions = db_select('node', 'n')
                 ->fields('n')
                 ->condition('type', 'faq')
                 ->condition('status', '1')
+                ->condition('language', [
+                    $language->language,
+                    LANGUAGE_NONE,
+                ], 'IN')
                 ->execute()
                 ->fetchAllAssoc('nid');
             $questions = node_load_multiple(array_keys($questions));
             $variables = [
                 'path_to_theme' => $path_to_theme,
-                'questions' => $questions
+                'questions' => $questions,
+                'form' => $form = drupal_get_form('marytrans_core_ask_question_form'),
             ];
             $block['content'] = theme('marytrans_faq', $variables);
             break;
         case 'marytrans_what_we_offer':
-            $variables['path_to_theme'] = $path_to_theme;
+            $offers = db_select('node', 'n')
+                ->fields('n')
+                ->condition('type', 'what_we_offer')
+                ->condition('status', '1')
+                ->condition('language', [
+                    $language->language,
+                    LANGUAGE_NONE,
+                ], 'IN')
+                ->execute()
+                ->fetchAllAssoc('nid');
+            $offers = node_load_multiple(array_keys($offers));
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'offers' => $offers,
+            ];
             $block['content'] = theme('marytrans_what_we_offer', $variables);
+            break;
+        case 'marytrans_my_orders':
+            global $user;
+            $orders = db_select('node', 'n')
+                ->fields('n')
+                ->condition('type', 'order')
+                ->condition('uid', $user->uid)
+                ->condition('status', '1')
+                ->execute()
+                ->fetchAllAssoc('nid');
+            $orders = node_load_multiple(array_keys($orders));
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'orders' => $orders,
+            ];
+            $block['content'] = theme('marytrans_my_orders', $variables);
+            break;
+        case 'marytrans_order_car':
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+                'form' => drupal_get_form('marytrans_core_order_car_form')
+            ];
+            $block['content'] = theme('marytrans_order_car', $variables);
             break;
     }
 
@@ -161,10 +219,6 @@ function marytrans_core_theme() {
             'variables' => ['vars' => NULL],
             'template' => 'templates/marytrans_short_contacts',
         ],
-        'marytrans_about_us' => [
-            'variables' => ['vars' => NULL],
-            'template' => 'templates/marytrans_about_us',
-        ],
         'marytrans_faq' => [
             'variables' => ['vars' => NULL],
             'template' => 'templates/marytrans_faq',
@@ -172,6 +226,14 @@ function marytrans_core_theme() {
         'marytrans_what_we_offer' => [
             'variables' => ['vars' => NULL],
             'template' => 'templates/marytrans_what_we_offer',
+        ],
+        'marytrans_my_orders' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_my_orders',
+        ],
+        'marytrans_order_car' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_order_car',
         ],
     ];
 }
