@@ -26,8 +26,8 @@ function mary_trans_preprocess_page(&$vars) {
                     drupal_goto('about-us');
                     break;
                 case 'simple_page':
-                    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_what_we_offer');
-                    $vars['page']['footer'] = render($block['content']);
+//                    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_what_we_offer');
+//                    $vars['page']['footer'] = render($block['content']);
                     break;
                 default:
                     drupal_goto('home');
@@ -38,13 +38,12 @@ function mary_trans_preprocess_page(&$vars) {
             $block = module_invoke('marytrans_core', 'block_view', 'marytrans_order_car');
             $vars['page']['content']['#suffix'] = render($block['content']);
             break;
+        case 'my-orders':
+            $block = module_invoke('marytrans_core', 'block_view', 'marytrans_order_more_details');
+            $vars['page']['content']['#suffix'] = render($block['content']);
+            break;
         case 'user/%':
             drupal_goto('home');
-            break;
-        case 'my-orders':
-            if ($vars['is_admin']) {
-                drupal_goto('home');
-            }
             break;
     }
 }

@@ -27,20 +27,26 @@
         color: $white;
         font-size: $size-16;
         margin-bottom: 30px;
+        padding-left: 50px;
 
         span {
             display: block;
         }
 
-        span:last-child {
-            margin-top: 5px;
+        span.address {
+            a {
+                text-decoration: none;
+                color: $yellow;
+                cursor: pointer;
+            }
         }
 
         span.glyphicon {
             font-size: $size-26;
             float: left;
             margin-right: 10px;
-            margin-top: 12px;
+            margin-top: 30px;
+            margin-left: -55px;
         }
     }
 

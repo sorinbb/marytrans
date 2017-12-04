@@ -21,7 +21,6 @@
 
 .fast-calculator {
     background: $black-background;
-    padding-top: 45px;
     padding-bottom: 30px;
 
     .deliver-your-car {
@@ -49,6 +48,7 @@
                     margin-bottom: 19px;
                     padding: 13px 7px;
                     background: $light-gray-background;
+                    color: #f9c32b;
 
                     select {
                         width: 107%;

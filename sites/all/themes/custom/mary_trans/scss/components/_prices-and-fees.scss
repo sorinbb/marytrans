@@ -1,0 +1,29 @@
+.prices-and-fees {
+    margin-top: 25px;
+
+    p.title {
+        font-size: $size-34;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    .price-block {
+        border-bottom: 2px dotted $black;
+        padding: 20px 0;
+
+        .price-block-description {
+            font-size: $size-16;
+            padding-top: 3px;
+
+            span.price {
+                font-size: $size-20;
+                color: $yellow;
+            }
+        }
+    }
+
+    .price-block:last-child {
+        border-bottom: none;
+    }
+}

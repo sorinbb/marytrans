@@ -18,7 +18,7 @@
                                 $price = field_view_field('node', $car, 'field_price')['#items'][0]['value'];
                             ?>
                             <div class="item<?php print (($loop == 0) ? ' active' : ''); ?>">
-                                <div class="col-xs-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                     <a>
                                         <img src="<?php print file_create_url($uri); ?>" class="img-responsive">
                                         <p class="car-brand"><?php print $car->title; ?></p>

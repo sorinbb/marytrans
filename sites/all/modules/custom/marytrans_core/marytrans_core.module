@@ -25,6 +25,12 @@ function marytrans_core_menu() {
         'page callback' => 'marytrans_core_my_orders',
         'access callback' => 'user_is_logged_in',
     ];
+    $items['prices_and_fees'] = [
+        'title' => 'Prices & Fees',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'marytrans_core_prices_and_fees',
+        'access callback' => TRUE,
+    ];
 
     return $items;
 }
@@ -68,6 +74,14 @@ function marytrans_core_block_info() {
     ];
     $blocks['marytrans_order_car'] = [
         'info' => t('MaryTrans order car'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_order_more_details'] = [
+        'info' => t('MaryTrans order more details'),
+        'status' => 0,
+    ];
+    $blocks['marytrans_prices_and_fees'] = [
+        'info' => t('MaryTrans prices and fees'),
         'status' => 0,
     ];
 
@@ -168,11 +182,15 @@ function marytrans_core_block_view($delta = '') {
             break;
         case 'marytrans_my_orders':
             global $user;
-            $orders = db_select('node', 'n')
+            $query = db_select('node', 'n')
                 ->fields('n')
-                ->condition('type', 'order')
-                ->condition('uid', $user->uid)
-                ->condition('status', '1')
+                ->condition('type', 'order');
+
+            if (!in_array('administrator', $user->roles)) {
+                $query->condition('uid', $user->uid);
+            }
+
+            $orders = $query->condition('status', '1')
                 ->execute()
                 ->fetchAllAssoc('nid');
             $orders = node_load_multiple(array_keys($orders));
@@ -188,6 +206,16 @@ function marytrans_core_block_view($delta = '') {
                 'form' => drupal_get_form('marytrans_core_order_car_form')
             ];
             $block['content'] = theme('marytrans_order_car', $variables);
+            break;
+        case 'marytrans_order_more_details':
+            $variables = [];
+            $block['content'] = theme('marytrans_order_more_details', $variables);
+            break;
+        case 'marytrans_prices_and_fees':
+            $variables = [
+                'path_to_theme' => $path_to_theme,
+            ];
+            $block['content'] = theme('marytrans_prices_and_fees', $variables);
             break;
     }
 
@@ -234,6 +262,14 @@ function marytrans_core_theme() {
         'marytrans_order_car' => [
             'variables' => ['vars' => NULL],
             'template' => 'templates/marytrans_order_car',
+        ],
+        'marytrans_order_more_details' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_order_more_details',
+        ],
+        'marytrans_prices_and_fees' => [
+            'variables' => ['vars' => NULL],
+            'template' => 'templates/marytrans_prices_and_fees',
         ],
     ];
 }

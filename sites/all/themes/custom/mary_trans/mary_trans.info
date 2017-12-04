@@ -25,4 +25,5 @@ stylesheets[all][] = css/main.css
 
 scripts[] = js/jquery.js
 scripts[] = js/bootstrap.js
+scripts[] = js/calculator_variables.js
 scripts[] = js/script.js

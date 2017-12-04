@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                 <div class="order-steps-title-button">
                     <p><?php print t('We offer quick and powerful solution for transport'); ?></p>
                 </div>

@@ -8,6 +8,7 @@
         min-height: 25px;
         max-height: 25px;
         background: $black-background;
+        top: 0;
 
         ul {
             li {
@@ -31,5 +32,28 @@
                 margin-right: 0;
             }
         }
+    }
+}
+
+body.admin-logged-in {
+    .main-header {
+        .main-navigation {
+            top: 30px !important;
+        }
+    }
+}
+
+body.admin-logged-in.toolbar-drawer {
+    .main-header {
+        .main-navigation {
+            top: 64px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        background: none;
+        height: 25px;
     }
 }

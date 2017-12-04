@@ -1,6 +1,4 @@
-<?php
-//var_dump($orders);die;
-?>
+<?php ?>
 
 <div class="my-cars">
 
@@ -10,7 +8,7 @@
 <!--                <span class="glyphicon glyphicon-plus-sign"></span>-->
 <!--                Create new order-->
 <!--            </a>-->
-            <p class="title text-center"><?php print t('My orders'); ?></p>
+            <p class="title text-center"><?php print ($is_admin ? t('Orders list') : t('My orders')); ?></p>
 
             <div class="table-responsive text-center">
                 <table class="table table-hover">
@@ -21,11 +19,15 @@
                         <th class="text-center"><?php print t('Model'); ?></th>
                         <th class="text-center"><span class="glyphicon glyphicon-camera"></span></th>
                         <th class="text-center"><?php print t('VIN'); ?></th>
+                        <th class="text-center"><?php print t('Name'); ?></th>
+                        <th class="text-center"><?php print t('ID number'); ?></th>
                         <th class="text-center"><?php print t('Debit'); ?></th>
                         <th class="text-center"><?php print t('Received'); ?></th>
                         <th class="text-center"><?php print t('Days'); ?></th>
                         <th class="text-center"><?php print t('Container'); ?>#</th>
                         <th class="text-center"><?php print t('Balance'); ?></th>
+                        <th></th>
+                        <th></th>
                     </tr>
 
                     <?php $modals = []; ?>
@@ -41,21 +43,43 @@
                         <?php foreach ($orders as $order) : ?>
                             <?php
                                 $debit = field_get_items('node', $order, 'field_debit')[0]['value'];
-                                $debit_total += intval($debit);
+                                $debit_total += (int)$debit;
                             ?>
                             <?php
                                 $received = field_get_items('node', $order, 'field_received')[0]['value'];
-                                $received_total += intval($received);
+                                $received_total += (int)$received;
                             ?>
                             <?php
                                 $balance = field_get_items('node', $order, 'field_balance')[0]['value'];
-                                $balance_total += intval($balance);
+                                $balance_total += (int)$balance;
                             ?>
                             <?php
                                 $order_created = new DateTime();
                                 $order_created->setTimestamp($order->created);
                                 $days_diff = $date->diff($order_created)->d;
                                 $nid = $order->nid;
+                                $vin_full = field_get_items('node', $order, 'field_vin')[0]['value'];
+                                $car_vin = substr($vin_full, -6);
+                                $invoice = field_get_items('node', $order, 'field_invoice')[0]['uri'];
+
+                                $more_details_data = [];
+                                $key = field_get_items('node', $order, 'field_key')[0]['value'];
+                                $more_details_data[] = 'data-key="' . $key . '"';
+                                $damage = field_get_items('node', $order, 'field_damage')[0]['value'];
+                                $more_details_data[] = 'data-damage="' . $damage . '"';
+                                $loading = field_get_items('node', $order, 'field_loading')[0]['value'];
+                                $more_details_data[] = 'data-loading="' . $loading . '"';
+                                $more_details_data[] = 'data-vin="' . $vin_full . '"';
+                                $fuel = field_get_items('node', $order, 'field_fuel')[0]['value'];
+                                $more_details_data[] = 'data-fuel="' . $fuel . '"';
+                                $body_style = field_get_items('node', $order, 'field_body_style')[0]['value'];
+                                $more_details_data[] = 'data-body-style="' . $body_style . '"';
+                                $engine_type = field_get_items('node', $order, 'field_engine_type')[0]['value'];
+                                $more_details_data[] = 'data-engine-type="' . $engine_type . '"';
+                                $transmission = field_get_items('node', $order, 'field_transmission')[0]['value'];
+                                $more_details_data[] = 'data-transmission="' . $transmission . '"';
+                                $lot_number = field_get_items('node', $order, 'field_lot_')[0]['value'];
+                                $more_details_data[] = 'data-lot-number="' . $lot_number . '"';
                             ?>
                             <tr>
                                 <td><?php print date('Y/m/d', $order->created); ?></td>
@@ -63,12 +87,20 @@
                                 <td><?php print $order->title; ?></td>
                                 <td><?php print field_get_items('node', $order, 'field_model')[0]['value']; ?></td>
                                 <td><a class="my-orders-slider cursor-pointer" data-order-nid="<?php print $nid; ?>"><span class="glyphicon glyphicon-picture"></span></a></td>
-                                <td><?php print field_get_items('node', $order, 'field_vin')[0]['value']; ?></td>
+                                <td><?php print '...' . $car_vin; ?></td>
+                                <td><?php print field_get_items('node', $order, 'field_name')[0]['value']; ?></td>
+                                <td><?php print field_get_items('node', $order, 'field_id_number')[0]['value']; ?></td>
                                 <td>$<?php print number_format($debit); ?></td>
                                 <td>$<?php print number_format($received); ?></td>
                                 <td>+<?php print $days_diff; ?></td>
                                 <td><?php print field_get_items('node', $order, 'field_container')[0]['value']; ?></td>
                                 <td>$<?php print number_format($balance); ?></td>
+                                <td><a href="<?php print file_create_url($invoice); ?>" target="_blank"><span class="glyphicon glyphicon-search"></span></a></td>
+                                <td>
+                                    <a class="order-more-details" <?php print implode(' ', $more_details_data); ?>>
+                                        More <span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                </td>
                             </tr>
 
                             <?php
@@ -98,11 +130,12 @@
 
                         <tr class="table-header">
                             <td><?php print t('Totals'); ?></td>
-                            <td colspan="5"></td>
+                            <td colspan="7"></td>
                             <td>$<?php print number_format($debit_total); ?> </td>
                             <td>$<?php print number_format($received_total); ?> </td>
                             <td colspan="2"></td>
                             <td>$<?php print number_format($balance_total); ?> </td>
+                            <td colspan="2"></td>
                         </tr>
 
                     <?php endif; ?>

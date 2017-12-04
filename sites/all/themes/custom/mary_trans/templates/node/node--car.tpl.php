@@ -22,17 +22,19 @@
                         <p class="description"><?php print $body[0]['value']; ?></p>
                         <p class="specifications">
                             <img src="<?php print $path_to_theme; ?>/images/acceleration.png">
-                            <?php print $field_acceleration[LANGUAGE_NONE][0]['value']; ?>s
+                            <?php print $field_acceleration[LANGUAGE_NONE][0]['value']; ?>mi
                             <img src="<?php print $path_to_theme; ?>/images/engine.png">
                             <?php print $field_engine[LANGUAGE_NONE][0]['value']; ?>
                             <img src="<?php print $path_to_theme; ?>/images/fuel-consumption.png">
                             <?php print $field_fuel_consumption[LANGUAGE_NONE][0]['value']; ?>l / 100km
                         </p>
+
                         <?php if (!empty($images)) : ?>
                             <a class="rounded-button float-left show-car-details"><?php print t('Show Details'); ?></a>
                         <?php else: ?>
                             <a class="rounded-button float-left show-car-details no-details"><?php print t('No Details'); ?></a>
                         <?php endif; ?>
+
                         <a class="rounded-button float-left order" data-toggle="modal" data-target="#carOrderModal" data-nid="<?php print $nid; ?>"><?php print t('Order'); ?></a>
                     </div>
                     <div class="cars-images-slider display-none">

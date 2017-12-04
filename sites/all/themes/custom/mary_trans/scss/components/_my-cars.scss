@@ -1,7 +1,6 @@
 .my-cars {
-    font-family: "Montserrat Regular";
+    font-family: "Montserrat Regular", "Helvetica";
     margin: 25px 0;
-    padding-top: 45px;
 
     p.title {
         font-size: $size-34;
@@ -23,6 +22,7 @@
 
             a {
                 color: $black;
+                cursor: pointer;
             }
         }
 

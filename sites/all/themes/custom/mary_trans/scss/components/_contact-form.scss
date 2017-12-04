@@ -1,6 +1,5 @@
 div.contact-form {
     margin: 25px 0;
-    padding-top: 45px;
     text-align: center;
 
     p.title {
@@ -28,9 +27,9 @@ div.contact-form {
         input[type=email],
         input[type=password] {
             width: 100%;
-            font-size: $size-20;
-            padding: 7px;
-            border-radius: 8px;
+            font-size: $size-16;
+            padding: 20px 7px;
+            border-radius: 5px;
             border: none;
             outline: none;
             margin-bottom: 20px;
@@ -39,6 +38,7 @@ div.contact-form {
         textarea {
             height: 170px;
             resize: none;
+            padding: 7px;
         }
 
         input[type=submit],

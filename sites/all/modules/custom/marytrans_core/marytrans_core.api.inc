@@ -35,3 +35,12 @@ function marytrans_core_my_orders() {
 
     return $content;
 }
+
+function marytrans_core_prices_and_fees() {
+    $content = '';
+
+    $block = module_invoke('marytrans_core', 'block_view', 'marytrans_prices_and_fees');
+    $content .= render($block['content']);
+
+    return $content;
+}

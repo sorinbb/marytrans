@@ -3,7 +3,7 @@
 @import "base/helpers";
 
 body {
-    font-family: $default-font;
+    font-family: $default-font, Helvetica;
 }
 
 @import "components/header";
@@ -23,3 +23,4 @@ body {
 @import "components/login";
 @import "components/my-cars";
 @import "components/modal-popup";
+@import "components/prices-and-fees";

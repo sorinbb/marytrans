@@ -18,24 +18,25 @@
             padding-right: 20px;
 
             p.title {
-                font-family: "Montserrat Bold";
+                font-family: "Montserrat Bold", "Helvetica";
                 font-size: $size-26;
             }
 
             p.price {
                 font-size: $size-20;
-                font-family: "Montserrat Bold";
+                font-family: "Montserrat Bold", "Helvetica";
                 color: $yellow;
             }
 
             p.description {
                 font-size: $size-16;
-                font-family: "Montserrat Regular";
+                font-family: "Montserrat Regular", "Helvetica";
             }
 
             p.specifications {
                 font-size: $size-16;
-                font-family: "Montserrat Bold";
+                font-family: "Montserrat Bold", "Helvetica";
+                margin-right: 10px;
 
                 img {
                     margin-right: 5px;
@@ -77,5 +78,5 @@
 }
 
 .our-cars-list:first-child {
-    padding-top: 80px;
+    padding-top: 35px;
 }

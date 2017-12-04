@@ -12,8 +12,8 @@
                 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
             </div>
             <div class="float-left call-us-phone">
-                <span class="country-code">+373</span>
-                <span class="phone-number">60837652</span>
+                <span class="country-code">+40</span>
+                <span class="phone-number">(755) 358 624</span>
             </div>
         </a>
     </li>

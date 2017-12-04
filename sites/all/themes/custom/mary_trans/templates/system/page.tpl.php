@@ -88,10 +88,11 @@
                     ?>
                     <?php if ($logged_in) : ?>
                         <li class="call-us"><a href="<?php print url('user/logout') ?>"><?php print t('Logout'); ?></a></li>
-
-                        <?php if (!$is_admin) : ?>
-                            <li>|</li>
-                            <li><a href="<?php print url('my-orders') ?>"><?php print t('My orders'); ?></a></li>
+                        <li>|</li>
+                        <?php if ($is_admin) : ?>
+                            <li><a href="<?php print url('my-orders') ?>"><?php print t('Orders list'); ?></a></li>
+                        <?php else : ?>
+                            <li><a href="<?php print url('my-orders') ?>"><?php print t('My list'); ?></a></li>
                         <?php endif; ?>
                     <?php else : ?>
                         <li><a href="<?php print url('user/register') ?>"><?php print t('Register'); ?></a></li>
