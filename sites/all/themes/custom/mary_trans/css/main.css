@@ -557,7 +557,8 @@ div.contact-form {
   padding: 60px 40px 40px 40px; }
   .contact-form.login-form .contact-form-wrapper input {
     margin-bottom: 40px;
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    height: 1px; }
 
 .my-cars {
   font-family: "Montserrat Regular", "Helvetica";
