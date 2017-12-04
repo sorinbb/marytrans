@@ -18,7 +18,10 @@
                     </div>
                     <div class="car-info">
                         <p class="title"><?php print $title; ?></p>
-                        <p class="price">$<?php print number_format($field_price[LANGUAGE_NONE][0]['value']); ?></p>
+                        <p class="price">
+                            $<?php print number_format($field_price[LANGUAGE_NONE][0]['value']); ?>
+                            - €<?php print number_format($field_euro_price[LANGUAGE_NONE][0]['value']); ?>
+                        </p>
                         <p class="description"><?php print $body[0]['value']; ?></p>
                         <p class="specifications">
                             <img src="<?php print $path_to_theme; ?>/images/acceleration.png">
