@@ -18,6 +18,15 @@
                     </div>
                     <div class="car-info">
                         <p class="title"><?php print $title; ?></p>
+                        <span class="actions">
+                            <?php if (!empty($images)) : ?>
+                                <a class="rounded-button float-left show-car-details"><?php print t('Show Details'); ?></a>
+                            <?php else: ?>
+                                <a class="rounded-button float-left show-car-details no-details"><?php print t('No Details'); ?></a>
+                            <?php endif; ?>
+
+                            <a class="rounded-button float-left order" data-toggle="modal" data-target="#carOrderModal" data-nid="<?php print $nid; ?>"><?php print t('Order'); ?></a>
+                        </span>
                         <p class="price">
                             $<?php print number_format($field_price[LANGUAGE_NONE][0]['value']); ?>
                             - €<?php print number_format($field_euro_price[LANGUAGE_NONE][0]['value']); ?>
@@ -31,14 +40,6 @@
                             <img src="<?php print $path_to_theme; ?>/images/fuel-consumption.png">
                             <?php print $field_fuel_consumption[LANGUAGE_NONE][0]['value']; ?>l / 100km
                         </p>
-
-                        <?php if (!empty($images)) : ?>
-                            <a class="rounded-button float-left show-car-details"><?php print t('Show Details'); ?></a>
-                        <?php else: ?>
-                            <a class="rounded-button float-left show-car-details no-details"><?php print t('No Details'); ?></a>
-                        <?php endif; ?>
-
-                        <a class="rounded-button float-left order" data-toggle="modal" data-target="#carOrderModal" data-nid="<?php print $nid; ?>"><?php print t('Order'); ?></a>
                     </div>
                     <div class="cars-images-slider display-none">
                         <?php if (!empty($images)) : ?>

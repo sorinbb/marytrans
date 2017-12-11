@@ -22,6 +22,11 @@
                 font-size: $size-26;
             }
 
+            span.actions {
+                float: right;
+                margin-top: -65px;
+            }
+
             p.price {
                 font-size: $size-20;
                 font-family: "Montserrat Bold", "Helvetica";

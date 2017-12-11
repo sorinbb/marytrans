@@ -387,6 +387,9 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
     .our-cars-list .car-item .car-info p.title {
       font-family: "Montserrat Bold", "Helvetica";
       font-size: 26px; }
+    .our-cars-list .car-item .car-info span.actions {
+      float: right;
+      margin-top: -65px; }
     .our-cars-list .car-item .car-info p.price {
       font-size: 20px;
       font-family: "Montserrat Bold", "Helvetica";
