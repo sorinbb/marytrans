@@ -196,7 +196,7 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
       margin-bottom: 19px;
       padding: 13px 7px;
       background: #f1f4f9;
-      color: #f9c32b; }
+      color: #c00909; }
       .fast-calculator .deliver-your-car .calculate-price .internal-options .select-wrapper select {
         width: 107%;
         background: none;
@@ -390,7 +390,7 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
     .our-cars-list .car-item .car-info p.price {
       font-size: 20px;
       font-family: "Montserrat Bold", "Helvetica";
-      color: #f9c32b; }
+      color: #c00909; }
     .our-cars-list .car-item .car-info p.description {
       font-size: 16px;
       font-family: "Montserrat Regular", "Helvetica"; }
@@ -547,7 +547,6 @@ div.contact-form {
     color: #000; }
   .about-us img {
     width: 100%;
-    height: 600px;
     margin: 20px 0; }
   .about-us p.bottom-description {
     text-align: center; }

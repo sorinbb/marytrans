@@ -46,12 +46,12 @@
                             <p class="calculate-price-title"><?php print t('Price per one car'); ?></p>
                             <div class="select-cars-per-container">
                                 <label for="sedan_per_container">
-                                    <input type="radio" name="load_type" id="sedan_per_container" checked="checked" >
+                                    <input type="radio" name="load_type" id="sedan_per_container" checked="checked" disabled="disabled">
                                     <img src="<?php print $path_to_theme; ?>/images/sedan.png" alt="sedan">
                                     x4 (Sedan) <?php print t('per container'); ?>
                                 </label>
                                 <label for="universal_per_container">
-                                    <input type="radio" name="load_type" id="universal_per_container">
+                                    <input type="radio" name="load_type" id="universal_per_container" disabled="disabled">
                                     <img src="<?php print $path_to_theme; ?>/images/universal.png" alt="universal">
                                     x3 (SUV) <?php print t('per container'); ?>
                                 </label>

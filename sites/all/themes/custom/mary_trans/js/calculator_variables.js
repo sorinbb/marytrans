@@ -2019,6 +2019,1909 @@ $(function () {
                     }
                 }
             }
+        },
+        '2': {
+            'name': 'IAAI',
+            'countries': {
+                '1': {
+                    'name': 'AK - ANCHORAGE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '2800'
+                        }
+                    }
+                },
+                '2': {
+                    'name': 'AL - BIRMINGHAM',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '3': {
+                    'name': 'AL - Dothan',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '500'
+                        }
+                    }
+                },
+                '4': {
+                    'name': 'AL - Huntsville',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '500'
+                        }
+                    }
+                },
+                '5': {
+                    'name': 'AR - FAYETTEVILLE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '980'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '850'
+                        }
+                    }
+                },
+                '6': {
+                    'name': 'AR - LITTLE ROCK',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '960'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '850'
+                        }
+                    }
+                },
+                '7': {
+                    'name': 'AZ - PHOENIX',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1200'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '560'
+                        }
+                    }
+                },
+                '8': {
+                    'name': 'AZ - TUCSON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1200'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '650'
+                        }
+                    }
+                },
+                '9': {
+                    'name': 'CA - Anaheim',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '350'
+                        }
+                    }
+                },
+                '10': {
+                    'name': 'CA - Colton',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '360'
+                        }
+                    }
+                },
+                '11': {
+                    'name': 'CA - East Bay',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '520'
+                        }
+                    }
+                },
+                '12': {
+                    'name': 'CA - Fontana',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '450'
+                        }
+                    }
+                },
+                '13': {
+                    'name': 'CA - Fremont',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '500'
+                        }
+                    }
+                },
+                '14': {
+                    'name': 'CA - FRESNO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '500'
+                        }
+                    }
+                },
+                '15': {
+                    'name': 'CA - High Desert',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '500'
+                        }
+                    }
+                },
+                '16': {
+                    'name': 'CA - LOS ANGELES',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '480'
+                        }
+                    }
+                },
+                '17': {
+                    'name': 'CA - North Hollywood',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '480'
+                        }
+                    }
+                },
+                '18': {
+                    'name': 'CA - SACRAMENTO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '520'
+                        }
+                    }
+                },
+                '19': {
+                    'name': 'CA - SAN DIEGO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '480'
+                        }
+                    }
+                },
+                '20': {
+                    'name': 'CO - DENVER',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '850'
+                        },
+                        '3': {
+                            'name': 'Texas',
+                            'price': '750'
+                        }
+                    }
+                },
+                '21': {
+                    'name': 'CO - Denver East',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1000'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '780'
+                        },
+                        '3': {
+                            'name': 'Texas',
+                            'price': '780'
+                        }
+                    }
+                },
+                '22': {
+                    'name': 'CO - Western Colorado',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1200'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '900'
+                        },
+                        '3': {
+                            'name': 'Texas',
+                            'price': '1250'
+                        }
+                    }
+                },
+                '23': {
+                    'name': 'CT - HARTFORD',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '475'
+                        }
+                    }
+                },
+                '24': {
+                    'name': 'CT - Hartford-South',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '475'
+                        }
+                    }
+                },
+                '25': {
+                    'name': 'DE - New Castle',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '510'
+                        }
+                    }
+                },
+                '26': {
+                    'name': 'FL - Clearwater',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '480'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '530'
+                        }
+                    }
+                },
+                '27': {
+                    'name': 'FL - Fort Myers',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '500'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '500'
+                        }
+                    }
+                },
+                '28': {
+                    'name': 'FL - Fort Pierce',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '500'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '500'
+                        }
+                    }
+                },
+                '29': {
+                    'name': 'FL - JACKSONVILLE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '500'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '475'
+                        }
+                    }
+                },
+                '30': {
+                    'name': 'FL - Miami',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '300'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '550'
+                        }
+                    }
+                },
+                '31': {
+                    'name': 'FL - MIAMI NORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '300'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '32': {
+                    'name': 'FL - ORLANDO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '400'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '400'
+                        }
+                    }
+                },
+                '33': {
+                    'name': 'FL - ORLANDO NORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '400'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '400'
+                        }
+                    }
+                },
+                '34': {
+                    'name': 'FL - Pensacola',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1000'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '675'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '675'
+                        }
+                    }
+                },
+                '35': {
+                    'name': 'FL - TAMPA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Miami',
+                            'price': '500'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '500'
+                        }
+                    }
+                },
+                '36': {
+                    'name': 'GA - ATLANTA EAST',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '37': {
+                    'name': 'GA - ATLANTA NORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '750'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '38': {
+                    'name': 'GA - ATLANTA SOUTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '39': {
+                    'name': 'GA - ATLANTA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '40': {
+                    'name': 'GA - Macon',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '41': {
+                    'name': 'GA - SAVANNAH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '750'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '320'
+                        }
+                    }
+                },
+                '42': {
+                    'name': 'GA - TIFTON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '820'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '400'
+                        }
+                    }
+                },
+                '44': {
+                    'name': 'IA - DAVENPORT',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '45': {
+                    'name': 'IA - DES MOINES',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '46': {
+                    'name': 'ID - BOISE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1350'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '820'
+                        }
+                    }
+                },
+                '47': {
+                    'name': 'IL - CHICAGO NORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '820'
+                        }
+                    }
+                },
+                '48': {
+                    'name': 'IL - CHICAGO SOUTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '820'
+                        }
+                    }
+                },
+                '49': {
+                    'name': 'IL - Chicago-West',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '840'
+                        }
+                    }
+                },
+                '50': {
+                    'name': 'IL - Lincoln',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '51': {
+                    'name': 'IL - Specialty Division',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '52': {
+                    'name': 'IL - St. Louis',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '840'
+                        }
+                    }
+                },
+                '53': {
+                    'name': 'IN - INDIANAPOLIS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '54': {
+                    'name': 'IN - South Bend',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '55': {
+                    'name': 'KS - KANSAS CITY',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '875'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '770'
+                        }
+                    }
+                },
+                '56': {
+                    'name': 'KS - WICHITA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '875'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '770'
+                        }
+                    }
+                },
+                '57': {
+                    'name': 'KY - Ashland',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '58': {
+                    'name': 'KY - Bowling Green',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '950'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '700'
+                        }
+                    }
+                },
+                '59': {
+                    'name': 'KY - LOUISVILLE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        }
+                    }
+                },
+                '60': {
+                    'name': 'KY - Louisville North',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '61': {
+                    'name': 'KY - Paducah',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1000'
+                        }
+                    }
+                },
+                '62': {
+                    'name': 'LA - BATON ROUGE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '980'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '600'
+                        }
+                    }
+                },
+                '63': {
+                    'name': 'LA - Lafayette',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '64': {
+                    'name': 'LA - NEW ORLEANS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '980'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '520'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '600'
+                        }
+                    }
+                },
+                '65': {
+                    'name': 'LA - New Orleans East',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '520'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '600'
+                        }
+                    }
+                },
+                '66': {
+                    'name': 'LA - SHREVEPORT',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '980'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '520'
+                        },
+                        '3': {
+                            'name': 'Georgia',
+                            'price': '650'
+                        }
+                    }
+                },
+                '67': {
+                    'name': 'MA - Boston - Shirley',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '68': {
+                    'name': 'MA - Taunton',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '69': {
+                    'name': 'MD - BALTIMORE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '70': {
+                    'name': 'MD - Laurel',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '71': {
+                    'name': 'MD - Metro DC',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '72': {
+                    'name': 'MD - Rosedale',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '73': {
+                    'name': 'ME - Portland - Gorham',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '680'
+                        }
+                    }
+                },
+                '74': {
+                    'name': 'MI - DETROIT',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '790'
+                        }
+                    }
+                },
+                '75': {
+                    'name': 'MI - Grand Rapids',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '780'
+                        }
+                    }
+                },
+                '76': {
+                    'name': 'MI - Great Lakes',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        }
+                    }
+                },
+                '77': {
+                    'name': 'MN - Minneapolis/St. Paul',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        }
+                    }
+                },
+                '78': {
+                    'name': 'MO - SPRINGFIELD',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1200'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '850'
+                        }
+                    }
+                },
+                '79': {
+                    'name': 'MS - Grenada',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '800'
+                        }
+                    }
+                },
+                '80': {
+                    'name': 'MS - Gulf Coast',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '700'
+                        }
+                    }
+                },
+                '81': {
+                    'name': 'MS - JACKSON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '720'
+                        }
+                    }
+                },
+                '82': {
+                    'name': 'MT - BILLINGS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '1000'
+                        }
+                    }
+                },
+                '83': {
+                    'name': 'MT - Missoula',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '950'
+                        }
+                    }
+                },
+                '84': {
+                    'name': 'NC - Asheville',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '650'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '85': {
+                    'name': 'NC - Charlotte',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '700'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '86': {
+                    'name': 'NC - Concord',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '87': {
+                    'name': 'NC - Greensboro',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '700'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '88': {
+                    'name': 'NC - RALEIGH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '680'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '89': {
+                    'name': 'NC - Wilmington',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '550'
+                        }
+                    }
+                },
+                '90': {
+                    'name': 'ND - Fargo',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        }
+                    }
+                },
+                '91': {
+                    'name': 'NE - Omaha',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        }
+                    }
+                },
+                '92': {
+                    'name': 'NH - Manchester',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        }
+                    }
+                },
+                '93': {
+                    'name': 'NJ - Avenel New Jersey',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '300'
+                        }
+                    }
+                },
+                '94': {
+                    'name': 'NJ - Central New Jersey',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '300'
+                        }
+                    }
+                },
+                '95': {
+                    'name': 'NJ - Northern New Jersey',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '250'
+                        }
+                    }
+                },
+                '96': {
+                    'name': 'NJ - Southern New Jersey',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '300'
+                        }
+                    }
+                },
+                '97': {
+                    'name': 'NM - ALBUQUERQUE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '850'
+                        },
+                        '3': {
+                            'name': 'Texas',
+                            'price': '830'
+                        }
+                    }
+                },
+                '98': {
+                    'name': 'NV - LAS VEGAS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '600'
+                        }
+                    }
+                },
+                '99': {
+                    'name': 'NV - RENO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '600'
+                        }
+                    }
+                },
+                '100': {
+                    'name': 'NY - ALBANY',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '480'
+                        }
+                    }
+                },
+                '101': {
+                    'name': 'NY - Buffalo',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        }
+                    }
+                },
+                '102': {
+                    'name': 'NY - LONG ISLAND',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '420'
+                        }
+                    }
+                },
+                '103': {
+                    'name': 'NY - NEWBURGH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '390'
+                        }
+                    }
+                },
+                '104': {
+                    'name': 'NY - ROCHESTER',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '550'
+                        }
+                    }
+                },
+                '105': {
+                    'name': 'NY - SYRACUSE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '570'
+                        }
+                    }
+                },
+                '106': {
+                    'name': 'OH - Akron-Canton',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '680'
+                        }
+                    }
+                },
+                '107': {
+                    'name': 'OH - Cincinnati',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '750'
+                        }
+                    }
+                },
+                '108': {
+                    'name': 'OH - Cincinnati-South',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '750'
+                        }
+                    }
+                },
+                '109': {
+                    'name': 'OH - CLEVELAND',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '110': {
+                    'name': 'OH - COLUMBUS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '111': {
+                    'name': 'OH - DAYTON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        }
+                    }
+                },
+                '112': {
+                    'name': 'OK - OKLAHOMA CITY',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '750'
+                        }
+                    }
+                },
+                '113': {
+                    'name': 'OK - TULSA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '870'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '800'
+                        }
+                    }
+                },
+                '114': {
+                    'name': 'OP - Portland West',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '820'
+                        }
+                    }
+                },
+                '115': {
+                    'name': 'OR - EUGENE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '840'
+                        }
+                    }
+                },
+                '116': {
+                    'name': 'OR - PORTLAND',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '820'
+                        }
+                    }
+                },
+                '117': {
+                    'name': 'PA - ALTOONA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '580'
+                        }
+                    }
+                },
+                '118': {
+                    'name': 'PA - Bridgeport',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '420'
+                        }
+                    }
+                },
+                '119': {
+                    'name': 'PA - Erie',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '620'
+                        }
+                    }
+                },
+                '120': {
+                    'name': 'PA - PHILADELPHIA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '420'
+                        }
+                    }
+                },
+                '121': {
+                    'name': 'PA - PITTSBURGH NORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '550'
+                        }
+                    }
+                },
+                '122': {
+                    'name': 'PA - PITTSBURGH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '620'
+                        }
+                    }
+                },
+                '123': {
+                    'name': 'PA - SCRANTON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '580'
+                        }
+                    }
+                },
+                '124': {
+                    'name': 'PA - York Springs',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '580'
+                        }
+                    }
+                },
+                '125': {
+                    'name': 'RI - Providence',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '520'
+                        }
+                    }
+                },
+                '126': {
+                    'name': 'SC - Charleston',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '350'
+                        }
+                    }
+                },
+                '127': {
+                    'name': 'SC - COLUMBIA',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '840'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '380'
+                        }
+                    }
+                },
+                '128': {
+                    'name': 'SC - Greenville',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '850'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '320'
+                        }
+                    }
+                },
+                '129': {
+                    'name': 'SD - Sioux Falls',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1250'
+                        }
+                    }
+                },
+                '130': {
+                    'name': 'TN - Chattanooga',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '520'
+                        }
+                    }
+                },
+                '131': {
+                    'name': 'TN - KNOXVILLE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '860'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '600'
+                        }
+                    }
+                },
+                '132': {
+                    'name': 'TN - MEMPHIS',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '870'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '600'
+                        }
+                    }
+                },
+                '133': {
+                    'name': 'TN - NASHVILLE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Georgia',
+                            'price': '650'
+                        }
+                    }
+                },
+                '134': {
+                    'name': 'TX - ABILENE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '520'
+                        }
+                    }
+                },
+                '135': {
+                    'name': 'TX - AMARILLO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '650'
+                        }
+                    }
+                },
+                '136': {
+                    'name': 'TX - AUSTIN',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '500'
+                        }
+                    }
+                },
+                '137': {
+                    'name': 'TX - CORPUS CHRISTI',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '500'
+                        }
+                    }
+                },
+                '138': {
+                    'name': 'TX - EL PASO',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '600'
+                        }
+                    }
+                },
+                '139': {
+                    'name': 'TX - DALLAS/FT. WORTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '880'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '500'
+                        }
+                    }
+                },
+                '140': {
+                    'name': 'TX - HOUSTON',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '350'
+                        }
+                    }
+                },
+                '141': {
+                    'name': 'TX - Houston-North',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '350'
+                        }
+                    }
+                },
+                '142': {
+                    'name': 'TX - LONGVIEW',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        }
+                    }
+                },
+                '143': {
+                    'name': 'TX - Lubbock',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1150'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '800'
+                        }
+                    }
+                },
+                '144': {
+                    'name': 'TX - MCALLEN',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1200'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        }
+                    }
+                },
+                '145': {
+                    'name': 'TX - Permian Basin',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1150'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '600'
+                        }
+                    }
+                },
+                '146': {
+                    'name': 'TX - SAN ANTONIO SOUTH',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1100'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        }
+                    }
+                },
+                '147': {
+                    'name': 'TX - Dallas',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1000'
+                        },
+                        '2': {
+                            'name': 'Texas',
+                            'price': '550'
+                        }
+                    }
+                },
+                '148': {
+                    'name': 'UT - SALT LAKE CITY',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '850'
+                        }
+                    }
+                },
+                '149': {
+                    'name': 'VA - Culpeper',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        }
+                    }
+                },
+                '150': {
+                    'name': 'VA - Northern Virginia',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '600'
+                        }
+                    }
+                },
+                '151': {
+                    'name': 'VA - Pulaski',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '650'
+                        }
+                    }
+                },
+                '152': {
+                    'name': 'VA - RICHMOND',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '650'
+                        }
+                    }
+                },
+                '153': {
+                    'name': 'VA - Suffolk',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '700'
+                        }
+                    }
+                },
+                '154': {
+                    'name': 'VA - Tidewater',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '700'
+                        }
+                    }
+                },
+                '155': {
+                    'name': 'VT - Burlington',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '700'
+                        }
+                    }
+                },
+                '156': {
+                    'name': 'WA - Seattle',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '900'
+                        }
+                    }
+                },
+                '157': {
+                    'name': 'WA - Seattle South',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '900'
+                        }
+                    }
+                },
+                '158': {
+                    'name': 'WA - SPOKANE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '1300'
+                        },
+                        '2': {
+                            'name': 'California',
+                            'price': '900'
+                        }
+                    }
+                },
+                '159': {
+                    'name': 'WI - Appleton',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        }
+                    }
+                },
+                '160': {
+                    'name': 'WI - MILWAUKEE',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '970'
+                        }
+                    }
+                },
+                '161': {
+                    'name': 'WI - Portage',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        }
+                    }
+                },
+                '162': {
+                    'name': 'WV - Buckhannon',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        }
+                    }
+                },
+                '163': {
+                    'name': 'WV - Shady Spring',
+                    'exit_ports': {
+                        '1': {
+                            'name': 'NJ New Jersey',
+                            'price': '900'
+                        }
+                    }
+                }
+            }
         }
     };
 
@@ -2028,7 +3931,7 @@ $(function () {
             'ports': {
                 '1': {
                     'name': 'Constanta',
-                    'price': '123'
+                    'price': '1900'
                 }
             }
         },
@@ -2127,10 +4030,14 @@ $(function () {
         $('.fast-calculator .ocean-rate .rate-price').data('price', '')
         var selected_country = $('.fast-calculator select.choose-country').find('option:selected').val();
         var selected_port = $(this).find('option:selected').val();
+        var selected_exit_port = $('.fast-calculator select.choose-exit-port').find('option:selected').text();
+        var selected_country_text = $('.fast-calculator select.choose-country').find('option:selected').text()
 
-        if ((countries_js[selected_country] != 'undefined') && (countries_js[selected_country]['ports'][selected_port])) {
-            ocean_price = '$' + countries_js[selected_country]['ports'][selected_port]['price'];
-            $('.fast-calculator .ocean-rate .rate-price').data('price', countries_js[selected_country]['ports'][selected_port]['price']);
+        if ((selected_exit_port == 'NJ New Jersey') && (selected_country_text == 'Romania')) {
+            if ((countries_js[selected_country] != 'undefined') && (countries_js[selected_country]['ports'][selected_port])) {
+                ocean_price = '$' + countries_js[selected_country]['ports'][selected_port]['price'];
+                $('.fast-calculator .ocean-rate .rate-price').data('price', countries_js[selected_country]['ports'][selected_port]['price']);
+            }
         }
 
         $('.fast-calculator .ocean-rate .rate-price').text(ocean_price);
