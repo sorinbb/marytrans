@@ -28,8 +28,12 @@
                             <a class="rounded-button float-left order" data-toggle="modal" data-target="#carOrderModal" data-nid="<?php print $nid; ?>"><?php print t('Order'); ?></a>
                         </span>
                         <p class="price">
-                            $<?php print number_format($field_price[LANGUAGE_NONE][0]['value']); ?>
-                            - €<?php print number_format($field_euro_price[LANGUAGE_NONE][0]['value']); ?>
+                            <?php if ($logged_in): ?>
+                                $<?php print number_format($field_price[LANGUAGE_NONE][0]['value']); ?>
+                                - €<?php print number_format($field_euro_price[LANGUAGE_NONE][0]['value']); ?>
+                            <?php else: ?>
+                                &nbsp;
+                            <?php endif; ?>
                         </p>
                         <p class="description"><?php print $body[0]['value']; ?></p>
                         <p class="specifications">
