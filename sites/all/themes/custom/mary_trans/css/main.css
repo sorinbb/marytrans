@@ -103,8 +103,8 @@ body.admin-logged-in.toolbar-drawer .main-header .main-navigation {
     padding: 0;
     margin-right: 15px; }
     .main-navigation .container .navbar-header a.navbar-brand img {
-      height: 35px;
-      margin-top: 8px; }
+      height: calc(100% - 5px);
+      margin-top: 5px; }
   .main-navigation .container .collapse.navbar-collapse {
     text-align: center; }
     .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav {
@@ -379,6 +379,16 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
     width: 350px;
     height: 300px;
     margin-right: 20px; }
+  .our-cars-list .car-item .car-image p.sold {
+    position: absolute;
+    font-size: 100px;
+    color: #c00909;
+    font-weight: bold;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    margin: 75px 0 0 65px; }
   .our-cars-list .car-item .car-info {
     min-height: 300px;
     padding-top: 20px;

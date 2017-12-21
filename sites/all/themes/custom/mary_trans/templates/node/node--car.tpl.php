@@ -15,6 +15,9 @@
                 <div class="car-item">
                     <div class="car-image">
                         <img src="<?php print file_create_url($first_image['uri']); ?>" class="float-left">
+                        <?php if ((!empty($field_loading)) && ($field_loading[LANGUAGE_NONE][0]['value'] == 'Yes')) : ?>
+                            <p class="sold">SOLD</p>
+                        <?php endif; ?>
                     </div>
                     <div class="car-info">
                         <p class="title"><?php print $title; ?></p>

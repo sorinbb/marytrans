@@ -9,6 +9,18 @@
                 height: 300px;
                 margin-right: 20px;
             }
+
+            p.sold {
+                position: absolute;
+                font-size: 100px;
+                color: $red;
+                font-weight: bold;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                margin: 75px 0 0 65px;
+            }
         }
 
         .car-info {

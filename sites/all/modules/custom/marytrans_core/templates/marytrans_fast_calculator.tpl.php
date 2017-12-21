@@ -4,7 +4,7 @@
 
             <div class="deliver-your-car">
                 <div class="deliver-your-car-text">
-                    <p><?php print t('Deliver your US auction car to port'); ?></p>
+                    <p><?php print t('Deliver your US auction car to your country'); ?></p>
                 </div>
                 <div class="calculate-price">
                     <div class="row">

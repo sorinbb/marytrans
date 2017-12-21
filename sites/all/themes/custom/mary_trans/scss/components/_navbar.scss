@@ -14,8 +14,8 @@
                 margin-right: 15px;
 
                 img {
-                    height: $logo-height;
-                    margin-top: 8px;
+                    height: calc(100% - 5px);
+                    margin-top: 5px;
                 }
             }
         }
