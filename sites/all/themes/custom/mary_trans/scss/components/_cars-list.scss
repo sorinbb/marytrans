@@ -27,6 +27,7 @@
             min-height: 300px;
             padding-top: 20px;
             padding-right: 20px;
+            padding-bottom: 20px;
 
             p.title {
                 font-family: "Montserrat Bold", "Helvetica";
@@ -55,13 +56,12 @@
                 font-family: "Montserrat Bold", "Helvetica";
                 margin-right: 10px;
 
-                img {
-                    margin-right: 5px;
-                    margin-left: 40px;
+                span.specification-item {
+                    margin-right: 40px;
                 }
 
-                img:first-child {
-                    margin-left: 0;
+                span.specification-item:last-child {
+                    margin-right: 0;
                 }
             }
 
@@ -96,4 +96,46 @@
 
 .our-cars-list:first-child {
     padding-top: 35px;
+}
+
+@media (max-width: 991px) {
+    .our-cars-list {
+        .car-item {
+            .car-info {
+                span.actions {
+                    float: initial;
+                    margin-top: -20px;
+                    display: block;
+                    height: 60px;
+                }
+
+                p.specifications {
+                    span.specification-item {
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+
+                    span.specification-item:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .our-cars-list {
+        .car-item {
+            .car-image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .car-info {
+                padding: 20px;
+            }
+        }
+    }
 }

@@ -6,10 +6,10 @@
 
             <div class="price-block">
                 <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 price-block-img text-center">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 price-block-img text-center">
                         <img src="<?php print $path_to_theme; ?>/images/copart.png">
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 price-block-description">
+                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 price-block-description">
                         <p>
                             <strong>
                                 <span class="price">$200</span>
@@ -22,10 +22,10 @@
             </div>
             <div class="price-block">
                 <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 price-block-img text-center">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 price-block-img text-center">
                         <img src="<?php print $path_to_theme; ?>/images/manheim.png">
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 price-block-description">
+                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 price-block-description">
                         <p>
                             <strong>
                                 <span class="price">$300</span>
@@ -38,10 +38,10 @@
             </div>
             <div class="price-block">
                 <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 price-block-img text-center">
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 price-block-img text-center">
                         <img src="<?php print $path_to_theme; ?>/images/iaai.png">
                     </div>
-                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 price-block-description">
+                    <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 price-block-description">
                         <p>
                             <strong>
                                 <span class="price">$250</span>

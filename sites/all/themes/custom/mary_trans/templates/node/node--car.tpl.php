@@ -40,12 +40,18 @@
                         </p>
                         <p class="description"><?php print $body[0]['value']; ?></p>
                         <p class="specifications">
-                            <img src="<?php print $path_to_theme; ?>/images/acceleration.png">
-                            <?php print $field_acceleration[LANGUAGE_NONE][0]['value']; ?>mi
-                            <img src="<?php print $path_to_theme; ?>/images/engine.png">
-                            <?php print $field_engine[LANGUAGE_NONE][0]['value']; ?>
-                            <img src="<?php print $path_to_theme; ?>/images/fuel-consumption.png">
-                            <?php print $field_fuel_consumption[LANGUAGE_NONE][0]['value']; ?>l / 100km
+                            <span class="specification-item">
+                                <img src="<?php print $path_to_theme; ?>/images/acceleration.png">
+                                <?php print $field_acceleration[LANGUAGE_NONE][0]['value']; ?>mi
+                            </span>
+                            <span class="specification-item">
+                                <img src="<?php print $path_to_theme; ?>/images/engine.png">
+                                <?php print $field_engine[LANGUAGE_NONE][0]['value']; ?>
+                            </span>
+                            <span class="specification-item">
+                                <img src="<?php print $path_to_theme; ?>/images/fuel-consumption.png">
+                                <?php print $field_fuel_consumption[LANGUAGE_NONE][0]['value']; ?>l / 100km
+                            </span>
                         </p>
                     </div>
                     <div class="cars-images-slider display-none">

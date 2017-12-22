@@ -18,6 +18,18 @@
                     margin-top: 5px;
                 }
             }
+
+            a.call-us-small {
+                height: 34px;
+                background: $white;
+                color: $black;
+                padding: 3px 10px;
+
+                .call-us-icon {
+                    font-size: $size-26;
+                    color: $gray;
+                }
+            }
         }
 
         .collapse.navbar-collapse {
@@ -95,17 +107,7 @@ body.admin-logged-in.toolbar-drawer {
         .container {
             .collapse.navbar-collapse {
                 ul.nav.navbar-nav.navbar-right {
-                    li {
-                        a {
-                            .call-us-icon {
-                                margin-right: 0;
-                            }
-
-                            .call-us-phone {
-                                display: none;
-                            }
-                        }
-                    }
+                    display: none;
                 }
             }
         }
@@ -120,15 +122,35 @@ body.admin-logged-in.toolbar-drawer {
         z-index: 999;
     }
 
+    body {
+        padding-top: 50px !important;
+    }
+
     body.admin-logged-in {
+        padding-top: 80px !important;
+
         .main-navigation {
             top: 55px;
         }
     }
 
     body.admin-logged-in.toolbar-drawer {
+        padding-top: 104px !important;
+
         .main-navigation {
             top: 89px;
+        }
+    }
+}
+
+@media (max-width: 344px) {
+    .main-navigation {
+        .container {
+            .navbar-header {
+                a.call-us-small {
+                    display: none;
+                }
+            }
         }
     }
 }

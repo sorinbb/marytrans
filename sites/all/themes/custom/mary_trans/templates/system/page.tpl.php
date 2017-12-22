@@ -120,6 +120,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a href="tel:+37360837652" class="call-us-small navbar-toggle collapsed">
+                <div class="float-left call-us-icon">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                </div>
+            </a>
             <a class="navbar-brand" href="<?php print $base_path ?>">
                 <img src="<?php print $path_to_theme; ?>/images/logo.png"
                      alt="MaryTrans.com">

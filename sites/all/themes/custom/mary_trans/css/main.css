@@ -69,9 +69,13 @@ body {
     max-height: 25px;
     background: #2e2e2e;
     top: 0; }
-    .main-header .main-navigation ul li a {
-      color: #f9c32b !important;
-      padding-top: 3px !important; }
+    .main-header .main-navigation ul {
+      margin-top: 0; }
+      .main-header .main-navigation ul li {
+        float: left; }
+        .main-header .main-navigation ul li a {
+          color: #f9c32b !important;
+          padding-top: 3px !important; }
     .main-header .main-navigation ul#language-interface {
       list-style: none;
       float: left; }
@@ -105,6 +109,14 @@ body.admin-logged-in.toolbar-drawer .main-header .main-navigation {
     .main-navigation .container .navbar-header a.navbar-brand img {
       height: calc(100% - 5px);
       margin-top: 5px; }
+  .main-navigation .container .navbar-header a.call-us-small {
+    height: 34px;
+    background: #fff;
+    color: #000;
+    padding: 3px 10px; }
+    .main-navigation .container .navbar-header a.call-us-small .call-us-icon {
+      font-size: 26px;
+      color: #777; }
   .main-navigation .container .collapse.navbar-collapse {
     text-align: center; }
     .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav {
@@ -148,9 +160,7 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
   top: 89px; }
 
 @media (max-width: 991px) {
-  .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right li a .call-us-icon {
-    margin-right: 0; }
-  .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right li a .call-us-phone {
+  .main-navigation .container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right {
     display: none; } }
 @media (max-width: 768px) {
   .main-navigation {
@@ -159,11 +169,21 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
     width: 100%;
     z-index: 999; }
 
-  body.admin-logged-in .main-navigation {
-    top: 55px; }
+  body {
+    padding-top: 50px !important; }
 
-  body.admin-logged-in.toolbar-drawer .main-navigation {
-    top: 89px; } }
+  body.admin-logged-in {
+    padding-top: 80px !important; }
+    body.admin-logged-in .main-navigation {
+      top: 55px; }
+
+  body.admin-logged-in.toolbar-drawer {
+    padding-top: 104px !important; }
+    body.admin-logged-in.toolbar-drawer .main-navigation {
+      top: 89px; } }
+@media (max-width: 344px) {
+  .main-navigation .container .navbar-header a.call-us-small {
+    display: none; } }
 .cars-radio-buttons label, .fast-calculator .deliver-your-car .calculate-price .cars-per-container .select-cars-per-container label, .fast-calculator .deliver-your-car .calculate-price .load-type .select-load-type label {
   font-size: 16px;
   margin: 10px 0; }
@@ -392,7 +412,8 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
   .our-cars-list .car-item .car-info {
     min-height: 300px;
     padding-top: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    padding-bottom: 20px; }
     .our-cars-list .car-item .car-info p.title {
       font-family: "Montserrat Bold", "Helvetica";
       font-size: 26px; }
@@ -410,11 +431,10 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
       font-size: 16px;
       font-family: "Montserrat Bold", "Helvetica";
       margin-right: 10px; }
-      .our-cars-list .car-item .car-info p.specifications img {
-        margin-right: 5px;
-        margin-left: 40px; }
-      .our-cars-list .car-item .car-info p.specifications img:first-child {
-        margin-left: 0; }
+      .our-cars-list .car-item .car-info p.specifications span.specification-item {
+        margin-right: 40px; }
+      .our-cars-list .car-item .car-info p.specifications span.specification-item:last-child {
+        margin-right: 0; }
     .our-cars-list .car-item .car-info a.show-car-details {
       display: inline-block;
       margin-top: 15px;
@@ -435,6 +455,22 @@ body.admin-logged-in.toolbar-drawer .main-navigation.affix {
 .our-cars-list:first-child {
   padding-top: 35px; }
 
+@media (max-width: 991px) {
+  .our-cars-list .car-item .car-info span.actions {
+    float: initial;
+    margin-top: -20px;
+    display: block;
+    height: 60px; }
+  .our-cars-list .car-item .car-info p.specifications span.specification-item {
+    display: block;
+    margin-bottom: 15px; }
+  .our-cars-list .car-item .car-info p.specifications span.specification-item:last-child {
+    margin-bottom: 0; } }
+@media (max-width: 640px) {
+  .our-cars-list .car-item .car-image img {
+    width: 100%; }
+  .our-cars-list .car-item .car-info {
+    padding: 20px; } }
 .paginator {
   text-align: center; }
   .paginator a {
