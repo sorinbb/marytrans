@@ -7,7 +7,7 @@
 </ul>
 <ul class="nav navbar-nav navbar-right">
     <li class="call-us">
-        <a href="tel:+37360837652">
+        <a href="tel:+40(755)358624">
             <div class="float-left call-us-icon">
                 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
             </div>
